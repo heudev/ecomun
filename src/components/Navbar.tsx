@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Navbar() {
     return (
-        <div className="navbar bg-[#422670]">
+        <div className="navbar bg-[#0f216d]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,6 +43,5 @@ export default function Navbar() {
                 <button className="btn rounded-full bg-[#fd7706] text-white">Apply Now!</button>
             </div>
         </div>
-
     )
 }
