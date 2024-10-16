@@ -48,48 +48,50 @@ const conferenceDays: Day[] = [
     },
 ];
 
-
 export default function ConferenceDays() {
     return (
-        <div className='bg-[#327dca] glass p-5 flex justify-center'>
-            <div role="tablist" className="tabs tabs-lifted w-full md:w-3/6">
-                {conferenceDays.map((day, dayIndex) => (
-                    <>
-                        <input
-                            type="radio"
-                            name="my_tabs_2"
-                            role="tab"
-                            className="tab text-white whitespace-nowrap"
-                            aria-label={day.date}
-                            defaultChecked={dayIndex === 0}
-                        />
-                        <div role="tabpanel" className="tab-content bg-[#fd7706] border-base-300 rounded-box p-6">
-                            <ul className="timeline timeline-vertical">
-                                {day.sessions.map((session, sessionIndex) => (
-                                    <li key={sessionIndex}>
-                                        <hr />
-                                        <div className="timeline-start">{session.time}</div>
-                                        <div className="timeline-middle">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20"
-                                                fill="currentColor"
-                                                className="h-5 w-5">
-                                                <path
-                                                    fillRule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                                    clipRule="evenodd" />
-                                            </svg>
-                                        </div>
-                                        <div className="timeline-end timeline-box">{session.title}</div>
-                                        <hr />
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </>
-                ))}
+        <section className="relative flex items-center py-10 lg:py-20 md:px-5">
+            <div className="absolute inset-0 bg-[#fd7706] opacity-50 z-0"></div>
+            <div className='p-5 flex justify-center w-full relative z-10'> {/* Added relative positioning and z-10 */}
+                <div role="tablist" className="tabs tabs-lifted w-full md:w-3/5 ">
+                    {conferenceDays.map((day, dayIndex) => (
+                        <>
+                            <input
+                                type="radio"
+                                name="my_tabs_2"
+                                role="tab"
+                                className="tab text-white whitespace-nowrap"
+                                aria-label={day.date}
+                                defaultChecked={dayIndex === 0}
+                            />
+                            <div role="tabpanel" className="tab-content border-base-300  rounded-box p-6">
+                                <ul className="timeline timeline-vertical">
+                                    {day.sessions.map((session, sessionIndex) => (
+                                        <li key={sessionIndex}>
+                                            <hr />
+                                            <div className="timeline-start">{session.time}</div>
+                                            <div className="timeline-middle">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                    className="h-5 w-5">
+                                                    <path
+                                                        fillRule="evenodd"
+                                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                                        clipRule="evenodd" />
+                                                </svg>
+                                            </div>
+                                            <div className="timeline-end timeline-box">{session.title}</div>
+                                            <hr />
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </>
+                    ))}
+                </div>
             </div>
-        </div>
-    )
-}
+        </section>
+    );
+};

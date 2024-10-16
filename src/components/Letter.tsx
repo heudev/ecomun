@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Letter() {
     return (
-        <section className="bg-[#422670] glass py-10 lg:py-20 px-5">
+        <section className="min-h-screen flex items-center bg-[#422670] py-10 lg:py-20 px-5 opacity-70">
             <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:space-x-10 space-y-10 lg:space-y-0">
                 <div className="flex justify-center lg:justify-start">
                     <Image
@@ -31,5 +31,5 @@ export default function Letter() {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};

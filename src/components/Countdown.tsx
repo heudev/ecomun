@@ -1,7 +1,7 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-const CountdownTimer: React.FC = () => {
+export default function CountdownTimer() {
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
         hours: 0,
@@ -70,5 +70,3 @@ const CountdownTimer: React.FC = () => {
         </div>
     );
 };
-
-export default CountdownTimer;

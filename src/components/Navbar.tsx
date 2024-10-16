@@ -1,7 +1,14 @@
-import React from 'react'
-import Image from 'next/image'
+"use client";
+import Image from 'next/image';
 
 export default function Navbar() {
+    const handleScroll = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div className="navbar bg-[#0f216d]">
             <div className="navbar-start">
@@ -23,25 +30,25 @@ export default function Navbar() {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Committiees</a></li>
-                        <li><a>Schedule</a></li>
-                        <li><a>Location</a></li>
-                        <li><a>Our Team</a></li>
+                        <li><a onClick={() => handleScroll('committees')}>Committees</a></li>
+                        <li><a onClick={() => handleScroll('schedule')}>Schedule</a></li>
+                        <li><a onClick={() => handleScroll('location')}>Location</a></li>
+                        <li><a onClick={() => handleScroll('team')}>Our Team</a></li>
                     </ul>
                 </div>
                 <Image src="/images/ppicon.png" alt="ecomun" className='ms-2' width={150} height={100} />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Committiees</a></li>
-                    <li><a>Schedule</a></li>
-                    <li><a>Location</a></li>
-                    <li><a>Our Team</a></li>
+                    <li><a onClick={() => handleScroll('committees')}>Committees</a></li>
+                    <li><a onClick={() => handleScroll('schedule')}>Schedule</a></li>
+                    <li><a onClick={() => handleScroll('location')}>Location</a></li>
+                    <li><a onClick={() => handleScroll('team')}>Our Team</a></li>
                 </ul>
             </div>
             <div className="navbar-end">
                 <button className="btn rounded-full bg-[#fd7706] text-white">Apply Now!</button>
             </div>
         </div>
-    )
-}
+    );
+};
