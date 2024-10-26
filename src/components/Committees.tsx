@@ -15,7 +15,7 @@ function Committee() {
                 <div className="card-body flex flex-col justify-between h-full">
                     <h2 className="card-title text-white mx-auto my-auto">SPECPOL!</h2>
                     <div className="card-actions justify-center">
-                        <button className="btn btn-sm bg-[#fd7706] text-[#0f216d] glass">Download Pdf</button>
+                        <button className="btn btn-sm bg-[#fd7706] text-[#0f216d] glass hover:bg-[#fd7706]">Download Pdf</button>
                     </div>
                 </div>
             </div>

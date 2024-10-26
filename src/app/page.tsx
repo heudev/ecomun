@@ -1,11 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Letter from "@/components/Letter";
+//import Letter from "@/components/Letter";
 import Footer from "@/components/Footer";
-import Youtube from "@/components/Youtube";
+//import Youtube from "@/components/Youtube";
 import ConferenceDays from "@/components/ConferenceDays";
 import Committees from "@/components/Committees";
-import Team from "@/components/Team";
+//import Team from "@/components/Team";
 import Gallery from "@/components/Gallery";
 import Fees from "@/components/Fees";
 
@@ -17,12 +17,12 @@ export default function Home() {
         <Navbar />
         <Hero />
         <div className="md:space-y-20">
-          <Letter />
+          {/*  <Letter /> */}
           <Committees />
           <ConferenceDays />
           <Fees />
-          <Team />
-          <Youtube />
+          {/*  <Team /> */}
+          {/*  <Youtube /> */}
           <Gallery />
           <Footer />
         </div>

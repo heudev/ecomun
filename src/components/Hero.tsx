@@ -16,7 +16,7 @@ export default function Hero() {
                         <CountdownTimer />
                     </div>
                     <h1 className="mb-5 text-4xl text-white font-bold mt-5 underline italic">6 - 9 FEBRUARY</h1>
-                    <button className="btn btn-lg rounded-full bg-[#fd7706] text-white">Apply Now!</button>
+                    <button className="btn btn-lg rounded-full bg-[#fd7706] text-white hover:bg-[#fd7706] glass">Apply Now!</button>
                 </div>
             </div>
         </div>
