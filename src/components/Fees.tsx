@@ -111,7 +111,7 @@ export default function Fees() {
                             target="_blank"
                         >
                             <span>Individual Delegate</span>
-                            <span>$50</span>
+                            <span>$60</span>
                         </a>
                         <a
                             className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105"
