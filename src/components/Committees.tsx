@@ -2,44 +2,44 @@ import Image from 'next/image';
 
 function Committee() {
     return (
-        <div className="stack">
-            <div className="card image-full w-96 shadow-xl">
-                <figure>
-                    <Image
-                        src="https://ceoconference.ro/wp-content/uploads/photo-gallery/bucuresti_2019/Wolfgang_Schulz_BMW_8558.jpg?bwg=1575041887"
-                        alt="Shoes"
-                        width={1920}
-                        height={1080}
-                    />
-                </figure>
-                <div className="card-body flex flex-col justify-between h-full">
-                    <h2 className="card-title text-white mx-auto my-auto">SPECPOL!</h2>
-                    <div className="card-actions justify-center">
-                        <button className="btn btn-sm bg-[#fd7706] text-[#0f216d] glass hover:bg-[#fd7706]">Download Pdf</button>
+        <a className="stack transition-transform transform hover:scale-105 group">
+            <div className="card relative w-96 h-52 shadow-xl overflow-hidden">
+                <Image
+                    src=""
+                    alt="Committee"
+                    width={1920}
+                    height={1080}
+                    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-100 opacity-0"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 group-hover:opacity-0" />
+                <div className="card-body flex flex-col justify-center items-center h-full relative z-10 text-center text-white">
+                    <div className="flex-grow flex items-center">
+                        <h2 className="card-title text-white">TBA</h2>
                     </div>
                 </div>
             </div>
-            <div className="border-base-content card bg-[#0f216d] w-96 border">
-                <div className="card-body">A</div>
-            </div>
-            <div className="border-base-content card bg-[#fd7706] w-96 border">
-                <div className="card-body">B</div>
-            </div>
-        </div>
+        </a>
     );
-};
+}
+
 
 export default function Committees() {
     return (
-        <div className='flex flex-wrap justify-center gap-5 p-5' id='committees'>
-            <Committee />
-            <Committee />
-            <Committee />
-            <Committee />
-            <Committee />
-            <Committee />
-            <Committee />
-            <Committee />
+        <div id='committees'>
+            <h1 className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-6 text-center">
+                Committees
+            </h1>
+            <div className='flex flex-wrap justify-center gap-10 p-5'>
+                <Committee />
+                <Committee />
+                <Committee />
+                <Committee />
+                <Committee />
+                <Committee />
+                <Committee />
+                <Committee />
+            </div>
         </div>
+
     );
 };

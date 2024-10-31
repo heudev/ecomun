@@ -74,13 +74,16 @@ const ConferenceSchedule: React.FC = () => {
 
     return (
         <div id='schedule'>
+            <h1 className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-6 text-center">
+                Schedule
+            </h1>
             <div role="tablist" className="tabs tabs-boxed mb-5 bg-[#0f216d] flex flex-col md:flex-row justify-center w-72 md:w-full max-w-2xl mx-auto">
                 {conferenceDays.map(day => (
                     <a
                         key={day.date}
                         onClick={() => handleDayChange(day.date)}
                         role="tab"
-                        className={`tab ${selectedDay === day.date ? 'bg-[#fd7706] glass text-white' : ''} w-full font-bold text-lg`}
+                        className={`tab ${selectedDay === day.date ? 'bg-[#fd7706] text-white' : ''} w-full font-bold text-lg`}
                     >
                         {day.date}
                     </a>

@@ -5,14 +5,19 @@ import Masonry from '@mui/lab/Masonry';
 import { Image } from 'antd';
 
 const imageUrlsArray: string[] = [
-    "https://picsum.photos/900/800",
-    "https://picsum.photos/900/700",
-    "https://picsum.photos/900/900",
-    "https://picsum.photos/900/600",
-    "https://picsum.photos/900/800",
-    "https://picsum.photos/900/500",
-    "https://picsum.photos/900/700",
-    "https://picsum.photos/900/600",
+    "/gallery/DSC02648.JPG",
+    "/gallery/DSC08769.JPG",
+    "/gallery/DSC08995.JPG",
+    "/gallery/IMG_4440.JPG",
+    "/gallery/IMG_5359.CR2.jpg",
+    "/gallery/IMG_5374.CR2.jpg",
+    "/gallery/IMG_5402.CR2.jpg",
+    "/gallery/IMG_8529.jpg",
+    "/gallery/IMG_8630.JPG",
+    "/gallery/IMG_8799.JPG",
+    "/gallery/IMG_8801.JPG",
+    "/gallery/IMG_8996.JPG",
+    "/gallery/IMG_9902.JPG"
 ];
 
 export default function Gallery() {
