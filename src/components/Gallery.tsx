@@ -15,7 +15,6 @@ const imageUrlsArray: string[] = [
     "/gallery/IMG_8529.jpg",
     "/gallery/IMG_8630.JPG",
     "/gallery/IMG_8799.JPG",
-    "/gallery/IMG_8801.JPG",
     "/gallery/IMG_8996.JPG",
     "/gallery/IMG_9902.JPG"
 ];
