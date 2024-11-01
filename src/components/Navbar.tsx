@@ -5,12 +5,12 @@ export default function Navbar() {
     const handleScroll = (sectionId: string) => {
         const section = document.getElementById(sectionId);
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+            section.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
     };
 
     return (
-        <div className="navbar bg-[#0f216d]">
+        <div className="navbar bg-[#0f216d] fixed z-10 lg:px-36">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,16 +30,16 @@ export default function Navbar() {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-white bg-[#0f216d] gap-1">
-                        <li className='bg-[#fd7706] glass rounded-lg !bg-transparent'><a onClick={() => handleScroll('committees')}>Committees</a></li>
-                        <li className='bg-[#fd7706] glass rounded-lg v'><a onClick={() => handleScroll('schedule')}>Schedule</a></li>
-                        <li className='bg-[#fd7706] glass rounded-lg !bg-transparent'><a onClick={() => handleScroll('location')}>Location</a></li>
-                        <li className='bg-[#fd7706] glass rounded-lg !bg-transparent'><a onClick={() => handleScroll('fees')}>Fees</a></li>
+                        <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('committees')}>Committees</a></li>
+                        <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('schedule')}>Schedule</a></li>
+                        <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('location')}>Location</a></li>
+                        <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('fees')}>Fees</a></li>
                         {/*   <li className='bg-[#fd7706] glass rounded-lg !bg-transparent'><a onClick={() => handleScroll('team')}>Our Team</a></li> */}
                     </ul>
                 </div>
                 <Image src="/images/ppicon.png" alt="ecomun" className='ms-2' width={180} height={100} />
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li><a onClick={() => handleScroll('committees')} className='!bg-transparent'>Committees</a></li>
                     <li><a onClick={() => handleScroll('schedule')} className='!bg-transparent'>Schedule</a></li>
@@ -47,8 +47,6 @@ export default function Navbar() {
                     <li><a onClick={() => handleScroll('fees')} className='!bg-transparent'>Fees</a></li>
                     {/* <li><a onClick={() => handleScroll('team')} className='!bg-transparent'>Our Team</a></li> */}
                 </ul>
-            </div>
-            <div className="navbar-end">
             </div>
         </div>
     );

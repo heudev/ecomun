@@ -10,10 +10,9 @@ export default function Hero() {
     };
 
     return (
-        <div
-            className="hero min-h-screen">
+        <div className="hero min-h-screen pt-10">
             <div className="hero-content text-neutral-content text-center">
-                <div className="space-y-16">
+                <div className="space-y-6 md:space-y-14">
                     <div>
                         <h1 className="text-xl md:text-6xl font-bold mb-2 text-white shadow-2xl">İZMİR UNIVERSITY OF ECONOMICS</h1>
                         <h1 className="mb-5 text-2xl md:text-6xl font-bold text-white shadow-2xl">ECOMUN CONFERENCE</h1>

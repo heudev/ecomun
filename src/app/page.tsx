@@ -11,22 +11,30 @@ import Fees from "@/components/Fees";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-fixed bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url('https://cdn.yenicaggazetesi.com.tr/news/860590.jpg')` }}>
-      <div className="absolute inset-0 bg-black opacity-65"></div>
-      <div className="relative z-10 ">
+    <main className="relative min-h-screen overflow-hidden">
+      <div
+        aria-hidden="true"
+        className="fixed inset-0 bg-center bg-cover bg-no-repeat z-0"
+        style={{
+          backgroundImage: `url('https://cdn.yenicaggazetesi.com.tr/news/860590.jpg')`,
+          height: '100vh',
+        }}
+      ></div>
+      <div className="fixed inset-0 bg-black opacity-65 z-10"></div>
+      <section className="relative z-20">
         <Navbar />
         <Hero />
-        <div className="md:space-y-32">
+        <div className="space-y-20 md:space-y-32">
           <Letter />
           <Committees />
           <ConferenceDays />
           <Fees />
-          {/*  <Team /> */}
-          {/*  <Youtube /> */}
+          {/* <Team /> */}
+          {/* <Youtube /> */}
           <Gallery />
           <Footer />
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
-};
+}
