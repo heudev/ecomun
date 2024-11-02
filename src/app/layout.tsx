@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Ecomun",
-  description: "Ecomun",
+  description: "İZMİR UNIVERSITY OF ECONOMICS ECOMUN CONFERENCE",
 };
 
 export default function RootLayout({
@@ -14,6 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/images/logo/favicon.png" type="image/png" sizes="32x32" />
       <body
         className={`antialiased`}
       >

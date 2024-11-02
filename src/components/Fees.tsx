@@ -17,7 +17,7 @@ export default function Fees() {
                     </div>
                     <div className="mt-4 space-y-2">
                         <a
-                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105"
+                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href="https://docs.google.com/forms/d/e/1FAIpQLSdAHMn4V8UjzwrWx0mJZHytanbwfjPb4VGPNRn4Nkudx1RTIA/viewform?usp=pp_url"
                             target="_blank"
                         >
@@ -25,7 +25,7 @@ export default function Fees() {
                             <span>1500₺</span>
                         </a>
                         <a
-                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105"
+                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href="https://forms.gle/Ani1qKec6qNXkksm6"
                             target="_blank"
                         >
@@ -44,7 +44,7 @@ export default function Fees() {
                     </div>
                     <div className="mt-4 space-y-2">
                         <a
-                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105"
+                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href="https://forms.gle/SQveovaAL4pdCF9g9"
                             target="_blank"
                         >
@@ -52,7 +52,7 @@ export default function Fees() {
                             <span>850₺</span>
                         </a>
                         <a
-                            className="btn bg-[#fd7706] text-black w-full justify-between hover:bg-[#fd7706] hover:scale-105"
+                            className="btn bg-[#fd7706] text-black w-full justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href="https://forms.gle/dRMbfT3VdEvT6okD8"
                             target="_blank"
                         >
@@ -71,7 +71,7 @@ export default function Fees() {
                     </div>
                     <div className="mt-4 space-y-2">
                         <a
-                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105"
+                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href="https://forms.gle/ULDmTB9CD25MGxP36"
                             target="_blank"
                         >
@@ -79,7 +79,7 @@ export default function Fees() {
                             <span>700₺</span>
                         </a>
                         <a
-                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105"
+                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href="https://forms.gle/PyV6c4MzMUFX3YgKA"
                             target="_blank"
                         >
@@ -87,7 +87,7 @@ export default function Fees() {
                             <span>700₺</span>
                         </a>
                         <a
-                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105"
+                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href="https://forms.gle/hD7ARfdonRTZGkEb9"
                             target="_blank"
                         >
@@ -106,7 +106,7 @@ export default function Fees() {
                     </div>
                     <div className="mt-4 space-y-2">
                         <a
-                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105"
+                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href="https://forms.gle/15JFjHMY2hdBfZmm6"
                             target="_blank"
                         >
@@ -114,7 +114,7 @@ export default function Fees() {
                             <span>$60</span>
                         </a>
                         <a
-                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105"
+                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href=""
                             target="_blank"
                         >

@@ -22,11 +22,10 @@ function Committee() {
     );
 }
 
-
 export default function Committees() {
     return (
         <div id='committees'>
-            <h1 className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-6 text-center">
+            <h1 className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-6 text-center text-white">
                 Committees
             </h1>
             <div className='flex flex-wrap justify-center gap-10 p-5'>

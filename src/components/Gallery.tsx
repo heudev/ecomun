@@ -5,18 +5,18 @@ import Masonry from '@mui/lab/Masonry';
 import { Image } from 'antd';
 
 const imageUrlsArray: string[] = [
-    "/gallery/DSC02648.JPG",
-    "/gallery/DSC08769.JPG",
-    "/gallery/DSC08995.JPG",
-    "/gallery/IMG_4440.JPG",
-    "/gallery/IMG_5359.CR2.jpg",
-    "/gallery/IMG_5374.CR2.jpg",
-    "/gallery/IMG_5402.CR2.jpg",
-    "/gallery/IMG_8529.jpg",
-    "/gallery/IMG_8630.JPG",
-    "/gallery/IMG_8799.JPG",
-    "/gallery/IMG_8996.JPG",
-    "/gallery/IMG_9902.JPG"
+    "/images/gallery/DSC02648.JPG",
+    "/images/gallery/DSC08769.JPG",
+    "/images/gallery/DSC08995.JPG",
+    "/images/gallery/IMG_4440.JPG",
+    "/images/gallery/IMG_5359.CR2.jpg",
+    "/images/gallery/IMG_5374.CR2.jpg",
+    "/images/gallery/IMG_5402.CR2.jpg",
+    "/images/gallery/IMG_8529.jpg",
+    "/images/gallery/IMG_8630.JPG",
+    "/images/gallery/IMG_8799.JPG",
+    "/images/gallery/IMG_8996.JPG",
+    "/images/gallery/IMG_9902.JPG"
 ];
 
 export default function Gallery() {
@@ -60,7 +60,7 @@ export default function Gallery() {
                                 key={index}
                                 src={image}
                                 alt={`Gallery ${index + 1}`}
-                                style={{ width: '100%', height: 'auto', objectFit: 'cover' }} // objectFit ile resimleri sığdırıyoruz
+                                style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                                 className='rounded shadow-2xl'
                             />
                         ))}

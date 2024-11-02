@@ -30,17 +30,17 @@ export default function Navbar() {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-white bg-[#0f216d] gap-1">
-                        <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('committees')}>Committees</a></li>
+                        <li className='glass rounded-lg bg-transparen'><a onClick={() => handleScroll('committees')}>Committees</a></li>
                         <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('schedule')}>Schedule</a></li>
                         <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('fees')}>Fees</a></li>
                         <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('location')}>Location</a></li>
                         {/*   <li className='bg-[#fd7706] glass rounded-lg !bg-transparent'><a onClick={() => handleScroll('team')}>Our Team</a></li> */}
                     </ul>
                 </div>
-                <Image src="/images/ppicon.png" alt="ecomun" className='ms-2' width={180} height={100} />
+                <Image src="/images/logo/ecomun.png" alt="ecomun" className='ms-2' width={180} height={100} />
             </div>
             <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 text-white">
                     <li><a onClick={() => handleScroll('committees')} className='!bg-transparent'>Committees</a></li>
                     <li><a onClick={() => handleScroll('schedule')} className='!bg-transparent'>Schedule</a></li>
                     <li><a onClick={() => handleScroll('fees')} className='!bg-transparent'>Fees</a></li>

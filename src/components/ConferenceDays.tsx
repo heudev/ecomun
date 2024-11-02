@@ -84,7 +84,7 @@ const ConferenceSchedule: React.FC = () => {
                         key={day.date}
                         onClick={() => handleDayChange(day.date)}
                         role="tab"
-                        className={`tab ${selectedDay === day.date ? 'bg-[#fd7706] text-white' : ''} w-full font-bold text-lg`}
+                        className={`tab ${selectedDay === day.date ? 'bg-[#fd7706]' : ''} w-full font-bold text-lg text-white`}
                     >
                         {day.date}
                     </a>
@@ -115,7 +115,7 @@ const ConferenceSchedule: React.FC = () => {
                                 </svg>
                             </div>
                             <div className={`${index % 2 === 0 ? "timeline-start text-end" : "timeline-end text-start"}`}>
-                                <time className="font-mono italic bg-[#0f216d] text-white rounded-lg p-1.5">{session.time}</time>
+                                <time className="text-lg bg-[#0f216d] text-white rounded-lg p-1.5">{session.time}</time>
                                 <div className="text-lg font-black">{session.title}</div>
                             </div>
                             <hr className='bg-gray-100' />

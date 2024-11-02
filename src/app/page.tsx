@@ -11,12 +11,12 @@ import Fees from "@/components/Fees";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-hidden">
+    <main className="relative min-h-screen overflow-hidden text-white">
       <div
         aria-hidden="true"
         className="fixed inset-0 bg-center bg-cover bg-no-repeat z-0"
         style={{
-          backgroundImage: `url('https://cdn.yenicaggazetesi.com.tr/news/860590.jpg')`,
+          backgroundImage: `url('/images/backgrounds/campus.jpg')`,
           height: '100vh',
         }}
       ></div>
@@ -37,4 +37,4 @@ export default function Home() {
       </section>
     </main>
   );
-}
+} 
