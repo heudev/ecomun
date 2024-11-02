@@ -5,18 +5,18 @@ import Masonry from '@mui/lab/Masonry';
 import { Image } from 'antd';
 
 const imageUrlsArray: string[] = [
-    "/images/gallery/DSC02648.jpg",
-    "/images/gallery/DSC08769.jpg",
-    "/images/gallery/DSC08995.jpg",
-    "/images/gallery/IMG_4440.jpg",
-    "/images/gallery/IMG_5359.CR2.jpg",
-    "/images/gallery/IMG_5374.CR2.jpg",
-    "/images/gallery/IMG_5402.CR2.jpg",
-    "/images/gallery/IMG_8529.jpg",
-    "/images/gallery/IMG_8630.jpg",
-    "/images/gallery/IMG_8799.jpg",
-    "/images/gallery/IMG_8996.jpg",
-    "/images/gallery/IMG_9902.jpg"
+    "/images/gallery/1.jpeg",
+    "/images/gallery/2.jpeg",
+    "/images/gallery/3.jpeg",
+    "/images/gallery/4.jpeg",
+    "/images/gallery/5.jpeg",
+    "/images/gallery/6.jpeg",
+    "/images/gallery/7.jpeg",
+    "/images/gallery/8.jpeg",
+    "/images/gallery/9.jpeg",
+    "/images/gallery/10.jpeg",
+    "/images/gallery/11.jpeg",
+    "/images/gallery/12.jpeg",
 ];
 
 export default function Gallery() {
