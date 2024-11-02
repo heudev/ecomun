@@ -32,8 +32,8 @@ export default function Navbar() {
                         className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-white bg-[#0f216d] gap-1">
                         <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('committees')}>Committees</a></li>
                         <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('schedule')}>Schedule</a></li>
-                        <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('location')}>Location</a></li>
                         <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('fees')}>Fees</a></li>
+                        <li className='glass rounded-lg bg-transparent'><a onClick={() => handleScroll('location')}>Location</a></li>
                         {/*   <li className='bg-[#fd7706] glass rounded-lg !bg-transparent'><a onClick={() => handleScroll('team')}>Our Team</a></li> */}
                     </ul>
                 </div>
@@ -43,8 +43,8 @@ export default function Navbar() {
                 <ul className="menu menu-horizontal px-1">
                     <li><a onClick={() => handleScroll('committees')} className='!bg-transparent'>Committees</a></li>
                     <li><a onClick={() => handleScroll('schedule')} className='!bg-transparent'>Schedule</a></li>
-                    <li><a onClick={() => handleScroll('location')} className='!bg-transparent'>Location</a></li>
                     <li><a onClick={() => handleScroll('fees')} className='!bg-transparent'>Fees</a></li>
+                    <li><a onClick={() => handleScroll('location')} className='!bg-transparent'>Location</a></li>
                     {/* <li><a onClick={() => handleScroll('team')} className='!bg-transparent'>Our Team</a></li> */}
                 </ul>
             </div>

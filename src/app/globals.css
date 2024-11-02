@@ -15,11 +15,14 @@
   }
 }
 
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
 }
 
 @layer utilities {

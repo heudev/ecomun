@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 type Session = {
     time: string;
@@ -90,29 +91,38 @@ const ConferenceSchedule: React.FC = () => {
                 ))}
             </div>
 
-            <ul className="timeline timeline-snap-icon timeline-vertical text-white"> {/* max-md:timeline-compact */}
-                {selectedSessions.map((session, index) => (
-                    <li key={session.time}>
-                        <div className="timeline-middle">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                                className="h-5 w-5">
-                                <path
-                                    fillRule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                    clipRule="evenodd" />
-                            </svg>
-                        </div>
-                        <div className={`${index % 2 == 0 ? " timeline-start text-end" : " timeline-end text-start"}`}>
-                            <time className="font-mono italic bg-[#0f216d] text-white rounded-lg p-1.5">{session.time}</time>
-                            <div className="text-lg font-black">{session.title}</div>
-                        </div>
-                        <hr className='bg-gray-100' />
-                    </li>
-                ))}
-            </ul>
+            <AnimatePresence mode='wait'>
+                <motion.ul
+                    key={selectedDay}
+                    className="timeline timeline-snap-icon timeline-vertical text-white"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 20 }}
+                    transition={{ duration: 0.3 }}
+                >
+                    {selectedSessions.map((session, index) => (
+                        <li key={session.time}>
+                            <div className="timeline-middle">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    className="h-5 w-5">
+                                    <path
+                                        fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clipRule="evenodd" />
+                                </svg>
+                            </div>
+                            <div className={`${index % 2 === 0 ? "timeline-start text-end" : "timeline-end text-start"}`}>
+                                <time className="font-mono italic bg-[#0f216d] text-white rounded-lg p-1.5">{session.time}</time>
+                                <div className="text-lg font-black">{session.title}</div>
+                            </div>
+                            <hr className='bg-gray-100' />
+                        </li>
+                    ))}
+                </motion.ul>
+            </AnimatePresence>
         </div>
     );
 };
