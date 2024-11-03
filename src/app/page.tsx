@@ -7,7 +7,7 @@ import ConferenceDays from "@/components/ConferenceDays";
 import Committees from "@/components/Committees";
 //import Team from "@/components/Team";
 import Gallery from "@/components/Gallery";
-import Fees from "@/components/Fees";
+//import Fees from "@/components/Fees";
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
           <Letter />
           <Committees />
           <ConferenceDays />
-          <Fees />
+          {/* <Fees /> */}
           {/* <Team /> */}
           {/* <Youtube /> */}
           <Gallery />
