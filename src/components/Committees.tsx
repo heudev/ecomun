@@ -109,7 +109,7 @@ function Modal({
                         }
 
 
-                        <p className="mb-4">{description}</p>
+                        <p className="mb-4 text-justify">{description}</p>
                         <div className='flex justify-between items-center'>
                             <div className="flex items-center">
                                 <Image
