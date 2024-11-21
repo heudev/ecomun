@@ -167,7 +167,7 @@ export default function Committees() {
         },
         {
             imageSrc: '/images/committees/unhcr_united_nations_high_commissioner_for_refugees.jpg',
-            name: 'UNHCR: United Nations High Commissioner for Refugees',
+            name: 'UNHCR: United Nations Refugee Agency',
             topic: '',
             agenda1: '',
             agenda2: '',
@@ -246,7 +246,7 @@ export default function Committees() {
             description: "The European Parliament focuses on key functions of the European Unions working system. These functions are legislating, approving the EU budget, shaping policies on issues like climate and human rights, ensuring institutional accountability, and contributing to foreign policy through international agreements",
             level: 'Intermediate',
             usgImageSrc: '/images/team/useravatar.png',
-            usgName: 'Gökçe Meva',
+            usgName: 'Gökçe Meva Aksu',
             usgOfCommittee: 'Under Secretary General of European Parliament',
         },
         {

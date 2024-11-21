@@ -2,11 +2,11 @@ import React from 'react';
 
 const faqItems = [
     {
-        question: "I am minor (under the age 18). Can I attend the conference as a delegate on my own?",
+        question: "I am a minor (under the age 18). Can I attend the conference as a delegate on my own?",
         answer: "Yes. Participants under 18 can attend the conference on their own if they have their parent or guardian sign the consent form we provide and submit the signed hard copy to the designated team member."
     },
     {
-        question: "I have never attended an MUN conference before, but I am very interested. Can I join ECOMUN?",
+        question: "I have never attended a MUN conference before, but I am very interested. Can I join ECOMUN?",
         answer: "Of course! Our conference offers beginner-level committees for new participants, as well as various roles such as admin or press in the organizing team. It is important for participants applying as delegates to indicate that they are first-timers in their applications, as this will be taken into account by our academic team for committee-country allocations."
     },
     {
@@ -18,7 +18,7 @@ const faqItems = [
         answer: "Of course! However, delegations without an advisor must designate a head delegate, as this is important for communication throughout the process leading up to the conference. During the conference, head delegates will also be responsible for other members of the delegation, similar to advisors."
     },
     {
-        question: "How long do I have to make the payment after receiving the confirmation email?",
+        question: "How much time do I have to make the payment after receiving the confirmation email?",
         answer: "Individual participants (delegate, admin, press, chairboard, ctm) must make their payment within 3 business days, while delegations have 5 business days to transfer the amount to the IBAN provided in the email as instructed."
     },
     {
