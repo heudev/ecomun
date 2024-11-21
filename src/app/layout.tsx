@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -16,11 +17,11 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/images/logo/favicon.png" type="image/png" sizes="32x32" />
       <body
-        className={`antialiased hidden`}
+        className={`antialiased`}
       >
         {children}
       </body>
-      <div className="flex justify-center items-center h-screen text-3xl">We will be here soon...</div>
+      <GoogleAnalytics gaId="G-BMN0G9J26G" />
     </html>
   );
 }

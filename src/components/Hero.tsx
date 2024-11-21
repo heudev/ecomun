@@ -5,7 +5,9 @@ export default function Hero() {
     const handleScroll = (sectionId: string) => {
         const section = document.getElementById(sectionId);
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+            const offset = 100;
+            const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ top: sectionPosition - offset, behavior: 'smooth' });
         }
     };
 

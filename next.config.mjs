@@ -5,7 +5,8 @@ const nextConfig = {
             'avatars.githubusercontent.com',
             'urj.org',
             'ceoconference.ro',
-            'via.placeholder.com'
+            'via.placeholder.com',
+            'picsum.photos'
         ],
     }
 };

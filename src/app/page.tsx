@@ -1,13 +1,14 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Letter from "@/components/Letter";
-import Footer from "@/components/Footer";
-//import Youtube from "@/components/Youtube";
+import Contact from "@/components/Contact";
+import Youtube from "@/components/Youtube";
 import ConferenceDays from "@/components/ConferenceDays";
 import Committees from "@/components/Committees";
 //import Team from "@/components/Team";
 import Gallery from "@/components/Gallery";
-//import Fees from "@/components/Fees";
+import Fees from "@/components/Fees";
+import Faq from "@/components/Faq";
 
 export default function Home() {
   return (
@@ -28,11 +29,15 @@ export default function Home() {
           <Letter />
           <Committees />
           <ConferenceDays />
-          {/* <Fees /> */}
+          <Fees />
           {/* <Team /> */}
-          {/* <Youtube /> */}
           <Gallery />
-          <Footer />
+          <Youtube />
+          <Faq />
+          <Contact />
+        </div>
+        <div className="flex justify-center pb-5 pt-2">
+          <a href="https://enes.run" target="_blank" className="italic">Developed by <span className="font-bold">Enes Uysal</span></a>
         </div>
       </section>
     </main>

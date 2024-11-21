@@ -75,10 +75,10 @@ const ConferenceSchedule: React.FC = () => {
 
     return (
         <div id='schedule'>
-            <h1 className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-6 text-center">
+            <h1 className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-6 text-center text-white">
                 Schedule
             </h1>
-            <div role="tablist" className="tabs tabs-boxed mb-5 bg-[#0f216d] flex flex-col md:flex-row justify-center w-72 md:w-full max-w-2xl mx-auto">
+            <div role="tablist" className="tabs tabs-boxed mb-5 bg-[#0f216d] flex flex-col md:flex-row justify-center w-72 md:w-full max-w-2xl mx-auto mt-10">
                 {conferenceDays.map(day => (
                     <a
                         key={day.date}
