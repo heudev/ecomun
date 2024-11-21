@@ -258,7 +258,7 @@ export default function Committees() {
             itemA: "",
             itemB: "",
             description: "The Special Committee on Peacekeeping Operations of the United Nations,or C34, is a committee of the United Nations General Assembly. It focuses challenges like funding, logistics, the safety of peacekeepers and ensuring mission supports from member countries.Committing in global peace and post-conflict recovery efforts, C34 also mandates over peacekeeping missions task distribution.",
-            level: 'Intermediate',
+            level: 'Advanced',
             usgImageSrc: '/images/team/useravatar.png',
             usgName: 'Alper Özkan',
             usgOfCommittee: 'Under Secretary General of Special Committee on Peacekeeping Operations',
