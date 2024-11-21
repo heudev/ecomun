@@ -13,7 +13,7 @@ export default function Footer() {
                     <div className='space-y-3'>
                         <div className="flex justify-center md:justify-start items-center text-lg">
                             <FaEnvelope className="mr-2  text-xl" />
-                            <a href="mailto:info@ecomun.org" className="font-bold">pr@ecomun.net</a>
+                            <a href="mailto:pr@ecomun.net" className="font-bold">pr@ecomun.net</a>
                         </div>
                         <div className="flex justify-center md:justify-start items-center text-lg">
                             <FaInstagram className="mr-2 text-xl" />
