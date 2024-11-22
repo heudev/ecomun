@@ -36,7 +36,7 @@ export default function Home() {
           <Faq />
           <Contact />
         </div>
-        <div className="flex justify-center pb-5 pt-2">
+        <div className="flex justify-center pb-5 pt-5">
           <a href="https://enes.run" target="_blank" className="italic">Developed by <span className="font-bold">Enes Uysal</span></a>
         </div>
       </section>

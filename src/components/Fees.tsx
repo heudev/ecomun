@@ -11,10 +11,7 @@ export default function Fees() {
 
             <div className="flex flex-wrap justify-center gap-5 max-w-4xl xl:max-w-full">
                 <div className="transition-transform transform hover:scale-105 bg-[rgba(66,38,112,0.7)] text-white p-6 rounded-lg shadow-lg w-80">
-                    <div className="text-5xl font-bold mb-4">
-                        1550₺
-                    </div>
-                    <div className="text-lg font-semibold">
+                    <div className="text-2xl font-bold mb-5 text-center">
                         Delegate
                     </div>
                     <div className="mt-4 space-y-2">
@@ -23,25 +20,30 @@ export default function Fees() {
                             href="https://docs.google.com/forms/d/e/1FAIpQLSdAHMn4V8UjzwrWx0mJZHytanbwfjPb4VGPNRn4Nkudx1RTIA/viewform?usp=pp_url"
                             target="_blank"
                         >
-                            <span>Individual Delegate</span>
-                            <span>1550₺</span>
+                            <span className="text-lg font-normal">Individual Delegate</span>
+                            <span className="text-lg">1550₺</span>
                         </a>
                         <a
                             className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href="https://forms.gle/Ani1qKec6qNXkksm6"
                             target="_blank"
                         >
-                            <span>Delegation</span>
-                            <span>1500₺</span>
+                            <span className="text-lg font-normal">Delegation</span>
+                            <span className="text-lg">1500₺</span>
+                        </a>
+                        <a
+                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
+                            href="https://forms.gle/hD7ARfdonRTZGkEb9"
+                            target="_blank"
+                        >
+                            <span className="text-lg font-normal">IUE Delegate</span>
+                            <span className="text-lg">700₺</span>
                         </a>
                     </div>
                 </div>
 
                 <div className="transition-transform transform hover:scale-105 bg-[rgba(66,38,112,0.7)] text-white p-6 rounded-lg shadow-lg w-80">
-                    <div className="text-5xl font-bold mb-4">
-                        875₺
-                    </div>
-                    <div className="text-lg font-semibold">
+                    <div className="text-2xl font-bold mb-5 text-center">
                         Academic Team
                     </div>
                     <div className="mt-4 space-y-2">
@@ -50,25 +52,22 @@ export default function Fees() {
                             href="https://forms.gle/SQveovaAL4pdCF9g9"
                             target="_blank"
                         >
-                            <span>Committee Board</span>
-                            <span>875₺</span>
+                            <span className="text-lg font-normal">Committee Board</span>
+                            <span className="text-lg">875₺</span>
                         </a>
                         <a
                             className="btn bg-[#fd7706] text-black w-full justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href="https://forms.gle/dRMbfT3VdEvT6okD8"
                             target="_blank"
                         >
-                            <span>Crisis Team Member</span>
-                            <span>875₺</span>
+                            <span className="text-lg font-normal">Crisis Team Member</span>
+                            <span className="text-lg">875₺</span>
                         </a>
                     </div>
                 </div>
 
                 <div className="transition-transform transform hover:scale-105 bg-[rgba(66,38,112,0.7)] text-white p-6 rounded-lg shadow-lg w-80">
-                    <div className="text-5xl font-bold mb-4">
-                        725₺
-                    </div>
-                    <div className="text-lg font-semibold">
+                    <div className="text-2xl font-bold mb-5 text-center">
                         Organization Team
                     </div>
                     <div className="mt-4 space-y-2">
@@ -77,33 +76,22 @@ export default function Fees() {
                             href="https://forms.gle/ULDmTB9CD25MGxP36"
                             target="_blank"
                         >
-                            <span>Press Staff</span>
-                            <span>725₺</span>
+                            <span className="text-lg font-normal">Press Staff</span>
+                            <span className="text-lg">725₺</span>
                         </a>
                         <a
                             className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href="https://forms.gle/PyV6c4MzMUFX3YgKA"
                             target="_blank"
                         >
-                            <span>Administrative Staff</span>
-                            <span>725₺</span>
-                        </a>
-                        <a
-                            className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
-                            href="https://forms.gle/hD7ARfdonRTZGkEb9"
-                            target="_blank"
-                        >
-                            <span>IUE Delegate</span>
-                            <span>700₺</span>
+                            <span className="text-lg font-normal">Administrative Staff</span>
+                            <span className="text-lg">725₺</span>
                         </a>
                     </div>
                 </div>
 
                 <div className="transition-transform transform hover:scale-105 bg-[rgba(66,38,112,0.7)] text-white p-6 rounded-lg shadow-lg w-80">
-                    <div className="text-5xl font-bold mb-4">
-                        $60
-                    </div>
-                    <div className="text-lg font-semibold">
+                    <div className="text-2xl font-bold mb-5 text-center">
                         International Delegate
                     </div>
                     <div className="mt-4 space-y-2">
@@ -112,16 +100,16 @@ export default function Fees() {
                             href="https://forms.gle/15JFjHMY2hdBfZmm6"
                             target="_blank"
                         >
-                            <span>Individual Delegate</span>
-                            <span>$60</span>
+                            <span className="text-lg font-normal">Individual Delegate</span>
+                            <span className="text-lg">$60</span>
                         </a>
                         <a
                             className="btn bg-[#fd7706] text-black w-full flex justify-between hover:bg-[#fd7706] hover:scale-105 border-0"
                             href="https://docs.google.com/forms/d/e/1FAIpQLSfB_s2Gti9Xyc6938whZd6FpBXDbwb9bEfqBlEs8VfAISIczw/viewform?usp=sharing"
                             target="_blank"
                         >
-                            <span>Delegation</span>
-                            <span>$50</span>
+                            <span className="text-lg font-normal">Delegation</span>
+                            <span className="text-lg">$50</span>
                         </a>
                     </div>
                 </div>

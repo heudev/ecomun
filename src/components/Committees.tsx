@@ -15,7 +15,7 @@ function Committee({
     return (
         <a
             onClick={onClick}
-            className="stack transition-transform transform hover:scale-105 group cursor-pointer"
+            className="stack transition-transform transform hover:scale-105 group cursor-pointer max-w-96"
         >
             <div className="card relative md:w-96 h-48 shadow-xl overflow-hidden rounded-lg">
                 <Image
@@ -294,20 +294,22 @@ export default function Committees() {
     ];
 
     return (
-        <div id="committees" className="py-10 xl:px-72 lg:px-40 bg-transparent">
-            <h1 className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-6 text-center text-white">
+        <div id="committees" className="py-10 mx-auto max-w-[850px] bg-transparent">
+            <div className="text-3xl lg:text-5xl font-bold lg:mb-6 text-center text-white">
                 Committees
-            </h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-5 md:gap-x-0 p-8 md:p-0">
-                {committees.map((committee, index) => (
-                    <Committee
-                        key={index}
-                        imageSrc={committee.imageSrc}
-                        name={committee.name}
-                        description={committee.description}
-                        onClick={() => setSelectedCommittee(committee)}
-                    />
-                ))}
+            </div>
+            <div className="flex justify-center items-center min-h-screen">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-4 p-5 md:p-0">
+                    {committees.map((committee, index) => (
+                        <Committee
+                            key={index}
+                            imageSrc={committee.imageSrc}
+                            name={committee.name}
+                            description={committee.description}
+                            onClick={() => setSelectedCommittee(committee)}
+                        />
+                    ))}
+                </div>
             </div>
 
             {selectedCommittee && (
