@@ -12,21 +12,41 @@ type Team = {
     members: TeamMember[];
 };
 
-type TeamMembers = {
+type Teams = {
     name: string;
     managers: TeamMember[];
-    teams: Team[];
+    subTeams: Team[];
 }[];
 
 
-const teamMembers: TeamMembers = [
+const Teams: Teams = [
+    {
+        name: "Executive Team",
+        managers: [],
+        subTeams: [
+            {
+                name: "",
+                head: [{ role: "Secretary General", name: 'Zeynep Deliceoğlu', avatar: 'https://avatars.githubusercontent.com/u/74737994?v=4' },],
+                members: [
+                    { role: "asd", name: 'John Doe', avatar: 'https://avatars.githubusercontent.com/u/74737994?v=4' },
+                    { role: "", name: 'Jane Smith', avatar: 'https://avatars.githubusercontent.com/u/74737994?v=4' },
+                    { role: "", name: 'Alice Johnson', avatar: 'https://avatars.githubusercontent.com/u/74737994?v=4' },
+                    { role: "", name: 'Bob Brown', avatar: 'https://avatars.githubusercontent.com/u/74737994?v=4' },
+                    { role: "", name: 'Bob Brown', avatar: 'https://avatars.githubusercontent.com/u/74737994?v=4' },
+                    { role: "", name: 'Bob Brown', avatar: 'https://avatars.githubusercontent.com/u/74737994?v=4' },
+                ]
+            }
+        ]
+    },
+
+
     {
         name: "Organization Team",
         managers: [
             { role: "Director General", name: 'Zeynep Deliceoğlu', avatar: 'https://avatars.githubusercontent.com/u/74737994?v=4' },
             { role: "Deputy Director General", name: 'Sinecan Vural', avatar: 'https://avatars.githubusercontent.com/u/74737994?v=4' },
         ],
-        teams: [
+        subTeams: [
             {
                 name: "Public Relations",
                 head: [
@@ -124,24 +144,26 @@ function TeamMember({ role = "", name, avatar }: TeamMember) {
 export default function TeamPage() {
     return (
         <div className="flex flex-col items-center p-4">
-            <div className="flex flex-wrap justify-center">
-                {teamMembers.map((team) => (
-                    <div key={team.name} className="flex flex-col items-center p-4">
-                        <h2 className="text-4xl font-bold mb-12">{team.name}</h2>
-                        <div className="flex flex-wrap justify-center">
-                            {team.managers.map((manager) => (
-                                <TeamMember key={manager.name} {...manager} />
-                            ))}
-                        </div>
+            <div className="flex flex-wrap justify-center gap-y-20">
+                {Teams.map((team, index) => (
+                    <div key={team.name} className={`flex flex-col items-center p-4`}> {/*  w-full ${index % 2 == 0 ? "bg-[rgba(66,38,112,1)]" : "bg-[#0f216d]"} */}
+                        <h2 className="text-4xl font-bold">{team.name}</h2>
+                        {team.managers.length > 0 &&
+                            <div className="flex flex-wrap justify-center mt-12">
+                                {team.managers.map((manager) => (
+                                    <TeamMember key={manager.name} {...manager} />
+                                ))}
+                            </div>
+                        }
                         <div className="">
-                            {team.teams.map((team) => (
-                                <div key={team.name}>
-                                    <hr className="mx-auto border-t-2 border-gray-400 w-full md:max-w-2xl mb-12 mt-12" />
+                            {team.subTeams.map((subTeam) => (
+                                <div key={subTeam.name}>
+                                    {team.managers.length > 0 && <hr className="mx-auto border-t-2 border-gray-400 w-full md:max-w-xl mt-12 mb-12" />}
                                     <div className="flex flex-col items-center p-4">
-                                        <h3 className="text-2xl font-bold mb-4">{team.name}</h3>
-                                        <TeamMember {...team.head[0]} />
-                                        <div className="flex flex-wrap justify-center max-w-5xl"> {/* number of members in a line */}
-                                            {team.members.map((member) => (
+                                        <h3 className="text-2xl font-bold mb-4">{subTeam.name}</h3>
+                                        {subTeam.head.length > 0 && <TeamMember {...subTeam.head[0]} />}
+                                        <div className="flex flex-wrap justify-center max-w-4xl"> {/* number of members in a line */}
+                                            {subTeam.members.map((member) => (
                                                 <TeamMember key={member.name} {...member} />
                                             ))}
                                         </div>
@@ -149,6 +171,7 @@ export default function TeamPage() {
                                 </div>
                             ))}
                         </div>
+                        {index < Teams.length - 1 && <hr className="mx-auto border-t-2 border-gray-400 w-full md:max-w-7xl mt-16" />}
                     </div>
                 ))}
             </div>
