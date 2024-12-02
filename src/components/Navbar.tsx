@@ -81,7 +81,6 @@ export default function Navbar() {
                     <li><a onClick={(e) => handleScroll(e, 'team')} className='!bg-transparent'>Team</a></li>
                     <li><a onClick={(e) => handleScroll(e, 'faq')} className='!bg-transparent'>FAQ</a></li>
                     <li><a onClick={(e) => handleScroll(e, 'contact')} className='!bg-transparent'>Contact</a></li>
-
                 </ul>
             </div>
         </div>

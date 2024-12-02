@@ -70,7 +70,7 @@ const Teams: Teams = [
                 ],
                 members: [
                     { name: 'Melisa Beste Ulu', avatar: '/images/team/melisa_beste_ulu.png' },
-                    { name: 'Dilanaz İçme', avatar: '' },
+                    { name: 'Dilanaz İçme', avatar: '/images/team/dilanaz_icme.png' },
                     { name: 'Berrak Selçuk', avatar: '/images/team/berrak_selcuk.png' },
                 ]
             },
@@ -186,7 +186,7 @@ export default function TeamPage() {
                 <div className="flex flex-col items-center p-4 pt-20">
                     <div className="flex flex-wrap justify-center gap-y-20">
                         {Teams.map((team, index) => (
-                            <div key={team.name} className={`flex flex-col items-center p-4`}>
+                            <div key={index} className={`flex flex-col items-center p-4`}>
                                 <h2 className="text-3xl md:text-4xl font-bold">{team.name}</h2>
                                 {team.managers.length > 0 &&
                                     <div className="flex flex-wrap justify-center mt-12">
@@ -196,15 +196,15 @@ export default function TeamPage() {
                                     </div>
                                 }
                                 <div className="">
-                                    {team.subTeams.map((subTeam) => (
-                                        <div key={subTeam.name}>
+                                    {team.subTeams.map((subTeam, index) => (
+                                        <div key={index}>
                                             {team.managers.length > 0 && <hr className="mx-auto border-t-2 border-gray-400 w-full md:max-w-xl mt-12 mb-12" />}
                                             <div className="flex flex-col items-center p-4">
                                                 <h3 className="text-2xl font-bold ">{subTeam.name}</h3>
                                                 {subTeam.head.length > 0 && <TeamMember {...subTeam.head[0]} />}
                                                 <div className={`flex flex-wrap justify-center ${subTeam.members.length === 5 ? "max-w-5xl" : "max-w-4xl"} `}> {/* number of members in a line */}
-                                                    {subTeam.members.map((member) => (
-                                                        <TeamMember key={member.name} {...member} />
+                                                    {subTeam.members.map((member, index) => (
+                                                        <TeamMember key={index} {...member} />
                                                     ))}
                                                 </div>
                                             </div>
