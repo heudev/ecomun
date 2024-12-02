@@ -12,7 +12,7 @@ export default function Hero() {
     };
 
     return (
-        <div className="hero min-h-screen pt-10">
+        <div className="hero min-h-screen pt-10" id="hero">
             <div className="hero-content text-neutral-content text-center">
                 <div className="space-y-6 md:space-y-10">
                     <div>
