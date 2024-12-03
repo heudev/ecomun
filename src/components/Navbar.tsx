@@ -4,9 +4,7 @@ import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 import { Suspense } from "react";
 
-export default function Navbar() {
-    const router = useRouter();
-    const pathname = usePathname();
+function ScrollHandler() {
     const searchParams = useSearchParams();
 
     useEffect(() => {
@@ -15,11 +13,23 @@ export default function Navbar() {
             if (targetId) {
                 const element = document.getElementById(targetId);
                 if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
+                    const navbarHeight = 64; // height of fixed navbar (16 * 4 = 64px)
+                    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                    window.scrollTo({
+                        top: elementPosition - navbarHeight,
+                        behavior: 'smooth'
+                    });
                 }
             }
         }
     }, [searchParams]);
+
+    return null;
+}
+
+export default function Navbar() {
+    const router = useRouter();
+    const pathname = usePathname();
 
     const handleScroll = async (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
         e.preventDefault();
@@ -34,15 +44,21 @@ export default function Navbar() {
         } else {
             const element = document.getElementById(targetId);
             if (element) {
-                const offset = 100;
-                const sectionPosition = element.getBoundingClientRect().top + window.scrollY;
-                window.scrollTo({ top: sectionPosition - offset, behavior: 'smooth' });
+                const navbarHeight = 64; // height of fixed navbar
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                    top: elementPosition - navbarHeight,
+                    behavior: 'smooth'
+                });
             }
         }
     };
 
     return (
-        <Suspense fallback={<div>Loading...</div>}>
+        <>
+            <Suspense>
+                <ScrollHandler />
+            </Suspense>
             <div className="navbar bg-[#0f216d] fixed z-10 lg:px-36 h-16">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -86,6 +102,6 @@ export default function Navbar() {
                     </ul>
                 </div>
             </div>
-        </Suspense>
+        </>
     );
 };
