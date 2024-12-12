@@ -94,7 +94,7 @@ const Teams: Teams = [
                     { name: 'Elif Tınas', avatar: '/images/team/elif_tinas.png' },
                     { name: 'Yağmur Sezgin', avatar: '/images/team/yagmur_sezgin.png' },
                     { name: 'Sude Kutlu', avatar: '/images/team/sude_kutlu.png' },
-                    { name: 'Furkan Yusuf Savan', avatar: '/images/team/furkan_yusuf_savan.png' },
+                    { name: 'Yusuf Furkan Savan', avatar: '/images/team/yusuf_furkan_savan.png' },
                 ]
             },
             {
@@ -150,7 +150,6 @@ const Teams: Teams = [
                     { role: "Rapporteur of NATO", name: 'Arda Ersöz', avatar: '/images/team/arda_ersoz.png' },
                     { role: "Rapporteur of UNIDIR", name: 'Selin Çavuşoğlu', avatar: '/images/team/selin_cavusoglu.png' },
                     { role: "Rapporteur of European Parliament", name: 'Elif Çalışkan', avatar: '/images/team/elif_caliskan.png' },
-                    { role: "Rapporteur of C34", name: 'Eyşan Özesen', avatar: '/images/team/eysan_ozesen.png' },
                 ]
             }
         ]
