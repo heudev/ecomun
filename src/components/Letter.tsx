@@ -11,27 +11,24 @@ export default function Letter() {
                             Secretary-General Letter
                         </h1>
                         <p className="text-base lg:text-lg leading-relaxed mb-6 text-justify">
-                            Dear ECOMUN Community,
+                            Dear participants of ECOMUN,
                             <br /><br />
-                            I am thrilled to welcome you to the ECOMUN Conference, a gathering dedicated to addressing pressing global environmental issues through the lens of diplomacy and collaboration. As your Secretary General, it is my privilege to guide this initiative, drawing on over a decade of experience in organizing impactful conferences that inspire and engage participants from all walks of life.
+                            On behalf of the entire ECOMUN secretariat team, it is my honor to welcome all of you to our annual ECOMUN conference!
                             <br /><br />
-                            Our mission at ECOMUN is to foster a vibrant platform where young leaders can engage in meaningful dialogue, develop innovative solutions, and build lasting connections. This year, we will explore critical topics, including climate change, sustainable development, and conservation efforts, all of which are vital to our collective future. We are proud to host a diverse lineup of keynote speakers and workshops featuring experts in various fields who will share their insights and experiences, sparking inspiration and encouraging creative thinking.
+                            My name is Alper ÖZKAN, a Mechatronics Engineering student and I will be serving as your Secretaty-General for this year&apos;s iteration of ECOMUN, Izmir&apos;s biggest Model United Nations Conference. Throughout the whole conference, My Director General Zeynep Deliceoğlu and I will lead a team of passionate and hard-working Izmir University of Economics students in managing Izmir’s  finest Model UN conference to the best of our abilities.
                             <br /><br />
-                            In addition to the discussions and workshops, we are excited to provide opportunities for networking and collaboration. We understand that real change often occurs through partnerships, and we hope that the connections made during this conference will spark future initiatives and collaborations among participants. Whether you are an experienced delegate or new to the Model United Nations format, we encourage you to bring your unique perspectives and ideas to the table.
+                            ECOMUN&apos;s mission is simple; we strive to provide young leaders a stimulating platform to debate, discuss, and resolve critical global issues by promoting equity, creativity, and diplomacy. At ECOMUN, Model United Nations is more than a simulation of the UN, but rather, it is a space for high school delegates to dig into the world of international issues and develop stronger public speaking, communication, critical thinking, and diplomacy skills. Whether you are the most passionate and knowledgeable political thinker or, perhaps, are someone foreign to the world of diplomacy, ECOMUN is for you.
                             <br /><br />
-                            We are also committed to creating an inclusive and high-quality experience for all participants. Your voice matters, and we encourage active participation to enrich our discussions and outcomes. Remember that the diversity of thought and experience in this room is our greatest asset. Each of you brings a unique perspective, and I urge you to share your insights and engage with others.
+                            Model UN has been an incredibly impactful part of my life, and I would not be where I am today if I had never participated in it. I hope that Model UN will have the same effect on all delegates attending ECOMUN, be it by making a new friend or by becoming a more confident person. Myself and the rest of the Secretariat Team are committed to providing a fun and educational Model United Nations experience to all delegates at ECOMUN, and we cannot wait to meet everyone in IEU this February.
                             <br /><br />
-                            Your voice matters immensely, and we encourage active participation to enrich our discussions and outcomes. Each of you brings a unique perspective that can contribute to our collective understanding and drive effective action. Remember, the power of collaboration lies in the diverse experiences and ideas we share.
-                            As we embark on this journey together, I want to remind you that the road to sustainability is paved with determination and creativity. “The future is not something we enter. The future is something we create.” Let us create a future that reflects our shared commitment to environmental stewardship and social responsibility.
-                            <br /><br />
-                            Thank you for being part of this important journey. Together, we can make a difference and inspire future generations to continue the vital work of protecting our planet.
-                            <br /><br />
-                            Warm regards,
+                            Kind regards,
                         </p>
                         <p className="font-semibold">
-                            İlke YIKILMAZ
+                            Alper ÖZKAN
                             <br />
-                            Secretary General of ECOMUN
+                            Secretary-General
+                            <br />
+                            Izmir University of Economics Model United Nations 2025
                         </p>
                     </div>
                 </div>

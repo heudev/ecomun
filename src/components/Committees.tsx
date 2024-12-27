@@ -43,6 +43,7 @@ function Modal({
     topic,
     agenda1,
     agenda2,
+    openAgenda,
     itemA,
     itemB,
     level,
@@ -57,6 +58,7 @@ function Modal({
     topic: string;
     agenda1: string;
     agenda2: string;
+    openAgenda: string;
     itemA: string;
     itemB: string;
     level: string;
@@ -100,6 +102,13 @@ function Modal({
                                 <p className="mb-2"><strong className='text-white'>Agenda 2:</strong> {agenda2}</p>
                             </div>
                         }
+
+                        {openAgenda !== "" &&
+                            <div>
+                                <p className="mb-2"><strong className='text-white'>Open Agenda:</strong> {openAgenda}</p>
+                            </div>
+                        }
+
                         {itemA !== "" && itemB !== "" &&
                             <div>
                                 <p className="mb-2"><strong className='text-white'>Item A:</strong> {itemA}</p>
@@ -141,6 +150,7 @@ export default function Committees() {
         topic: string;
         agenda1: string;
         agenda2: string;
+        openAgenda: string;
         itemA: string;
         itemB: string;
         level: string;
@@ -154,8 +164,9 @@ export default function Committees() {
             imageSrc: '/images/committees/united_nations_development_programme.jpg',
             name: 'UNDP: United Nations Development Programme',
             topic: 'Sustainable Development Goals',
-            agenda1: 'TBA',
-            agenda2: 'TBA',
+            agenda1: 'Building sustainable energy systems and elude from non-renewable energy to achieve advanced sustainable levels.',
+            agenda2: 'Ensuring Sustainability in Wastewater Management to Protect Clean Water Sources.',
+            openAgenda: "",
             itemA: "",
             itemB: "",
             description: 'The United Nations Development Programme (UNDP) works to improve living standards in developing countries by providing resources, knowledge and support. It focuses on areas such as poverty reduction, climate change and sustainable development, collaborating with governments and communities to deal with global challenges. UN members are expected to discuss on current and possible actions.',
@@ -170,6 +181,7 @@ export default function Committees() {
             topic: '',
             agenda1: '',
             agenda2: '',
+            openAgenda: "",
             itemA: "Brain Drain and National Development",
             itemB: "Implementing effective ways to improve healthcare and security in refugee camps",
             description: "The United Nations Refugee Agency(UNHCR) is an international organization dedicated to safeguarding the rights and well-being of refugees, stateless individuals and others forced to leave their homes due to conflict or disaster. Working with governments and partner organisations, UNHCR provides essential support including shelter, healthcare and education while seeking constant solutions such as voluntary repatriation, resettlement and integration into host countries.",
@@ -182,8 +194,9 @@ export default function Committees() {
             imageSrc: '/images/committees/unidir_united_nations_institute_for_disarmament_research.jpg',
             name: 'UNIDIR: United Nations Institute for Disarmament Research',
             topic: 'Managing Exits from Armed Conflict Project (MEAC)',
-            agenda1: 'TBA',
-            agenda2: 'TBA',
+            agenda1: 'Stability and reintegration in post conflict regions.',
+            agenda2: 'Rescue of disadvantaged groups from the conflict zones and rehabilitation of affected people.',
+            openAgenda: "",
             itemA: "",
             itemB: "",
             description: "UNIDIR (United Nations Institute for Disarmament Research) established in order to inform the member states and the public of international security and disarmament. Currently with the aim of building a more secure world, UNIDIR is focused on disarmament,exiting an armed conflict, peace and security through conducting research on innovative solutions for disarmament and promoting protection from armed conflicts and tech-related global threaths. ",
@@ -196,8 +209,9 @@ export default function Committees() {
             imageSrc: '/images/committees/wto_world_trade_organization.jpg',
             name: 'WTO: World Trade Organization',
             topic: 'Regional Sustainable Development Projects between partner and member countries to increase trade capacities.',
-            agenda1: 'TBA',
-            agenda2: 'TBA',
+            agenda1: 'Discussing the Zero-Tariff policy for least developed countries enforced by China and the effects they have on the country’s economic development.',
+            agenda2: 'Trade Capacities and Economic Recovery in Conflict-Affected Regions: Addressing the Impact of the Middle Eastern War on Regional and Global Trade Systems.',
+            openAgenda: "",
             itemA: "",
             itemB: "",
             description: "WTO (World Trade Organization) committee focuses on engaging discussions and negotiations related to trade policies, trade disputes and other issues which affect global commerce. Mission being regional stability and continunity of trade for trust based relations to not be broken. Our goal is to reach solutions that promote fair and open trade. We are here for working on the future of international commerce",
@@ -210,8 +224,9 @@ export default function Committees() {
             imageSrc: '/images/committees/wfp_world_food_programme.jpg',
             name: 'WFP: World Food Programme',
             topic: 'Ending Hunger and Famine in Conflict Zones or Disaster Zones',
-            agenda1: 'TBA',
-            agenda2: 'TBA',
+            agenda1: '',
+            agenda2: '',
+            openAgenda: "Tackling the issue of ongoing hunger crises in South Sudan and Haiti with progressive approach.",
             itemA: "",
             itemB: "",
             description: "The World Food Programme (WFP) is a UN committee and world's largest humanitarian organisation focused on combatting world hunger, providing emergency supplies to conflict and disaster areas and raising funds to do so. Works in collaboration with civil society organizations and governments",
@@ -224,8 +239,9 @@ export default function Committees() {
             imageSrc: '/images/committees/un_women.jpg',
             name: 'UN WOMEN',
             topic: 'Women Peace and Security',
-            agenda1: 'TBA',
-            agenda2: 'TBA',
+            agenda1: 'Thwarting and Reciprocating Against the Gender Based Violence and Femicide.',
+            agenda2: 'Ensuring the Safety of Women in Humanitarian Emergencies.',
+            openAgenda: "",
             itemA: "",
             itemB: "",
             description: "The United Nations Entity for Gender Equality and the Empowerment of Women implements initiatives to promote gender equality and empower women around the world. UN Women develops effective projects, from strengthening women's roles in economic and social life to increasing access to education, health services and protection from violence. As the UN Women Committee, we aim to raise awareness and produce solutions so that every woman can have the chance to reach the opportunities she deserves. We expect your support and assistance on this path.",
@@ -238,8 +254,9 @@ export default function Committees() {
             imageSrc: '/images/committees/european_parliament.jpg',
             name: 'EUROPEAN PARLIAMENT',
             topic: 'Asylum and Migration in the European Union',
-            agenda1: 'TBA',
-            agenda2: 'TBA',
+            agenda1: '',
+            agenda2: '',
+            openAgenda: "",
             itemA: "",
             itemB: "",
             description: "The European Parliament focuses on key functions of the European Unions working system. These functions are legislating, approving the EU budget, shaping policies on issues like climate and human rights, ensuring institutional accountability, and contributing to foreign policy through international agreements",
@@ -251,15 +268,16 @@ export default function Committees() {
         {
             imageSrc: '/images/committees/c34_special_committee_on_peacekeeping_operations.jpg',
             name: 'Special Committee on Peacekeeping Operations',
-            topic: 'Member countries cooperation on operating Peace Keeping Forces.(Taking turns in funding,Taking turns in becoming the peacekeeping force)',
-            agenda1: 'TBA',
+            topic: '',
+            agenda1: '',
             agenda2: 'TBA',
-            itemA: "",
-            itemB: "",
+            openAgenda: "",
+            itemA: "Peacekeeping in Complex Political Environments",
+            itemB: "Exit Strategies and Transition from Peacekeeping to Peacebuilding",
             description: "The Special Committee on Peacekeeping Operations of the United Nations,or C34, is a committee of the United Nations General Assembly. It focuses challenges like funding, logistics, the safety of peacekeepers and ensuring mission supports from member countries.Committing in global peace and post-conflict recovery efforts, C34 also mandates over peacekeeping missions task distribution.",
             level: 'Advanced',
-            usgImageSrc: '/images/team/alper_ozkan.png',
-            usgName: 'Alper Özkan',
+            usgImageSrc: '/images/team/useravatar.png',
+            usgName: 'Derin Duru',
             usgOfCommittee: 'Under Secretary General of Special Committee on Peacekeeping Operations',
         },
         {
@@ -268,6 +286,7 @@ export default function Committees() {
             topic: 'Europe End of the Middle Ages',
             agenda1: '',
             agenda2: '',
+            openAgenda: "",
             itemA: "",
             itemB: "",
             description: "Footsteps of the Ottoman Turks shook the ground and caused a havoc in the west. While for everyone it was a shock and a message from the Turks, it was just the beginning. From east to west message was clear “There is nowhere safe” and also there was another thing in this message that sparked a fire to become a wildfire in the west “The Bombards”. Such magnificent tool annihilating even the thickest of the walls was maybe not so bad for the Kings and Emperors who are looking for a way to solidify control and centralise their Kingdoms-Empires. So it began the “End of the Middle Ages”, a spark in Europe to change the centuries in front .",
@@ -282,6 +301,7 @@ export default function Committees() {
             topic: '2001 NATO meeting on Cooperation of member countries for identifying,knowldege sharing and destroying radical terrorist organizations.',
             agenda1: '',
             agenda2: '',
+            openAgenda: "",
             itemA: "",
             itemB: "",
             description: "The North Atlantic Treaty Organization (NATO) is a political and military alliance committed to the collective defense and security of its member states. Established to respond to threats and uphold peace, NATO’s approach includes diplomatic efforts and when necessary, coordinated military action. As global security issues have evolved, NATO’s mission has expanded to address new challenges like cyber threats and terrorism, making it an essential organisation in promoting stability and protecting allied nations.",
@@ -319,6 +339,7 @@ export default function Committees() {
                     topic={selectedCommittee.topic}
                     agenda1={selectedCommittee.agenda1}
                     agenda2={selectedCommittee.agenda2}
+                    openAgenda={selectedCommittee.openAgenda}
                     itemA={selectedCommittee.itemA}
                     itemB={selectedCommittee.itemB}
                     level={selectedCommittee.level}

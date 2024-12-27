@@ -27,9 +27,9 @@ const Teams: Teams = [
         subTeams: [
             {
                 name: "",
-                head: [{ role: "President of ECOMUN", name: 'Alper Özkan', avatar: '/images/team/alper_ozkan.png' },],
+                head: [],
                 members: [
-                    { role: "Secretary General", name: 'İlke Yıkılmaz', avatar: '/images/team/ilke_yikilmaz.png' },
+                    { role: "Secretary General", name: 'Alper Özkan', avatar: '/images/team/alper_ozkan.png' },
                     { role: "Deputy Secretary General", name: 'Ahat Oğuzhan Ergin', avatar: '/images/team/ahat_oguzhan_ergin.png' },
                     { role: "Director General", name: 'Zeynep Deliceoğlu', avatar: '/images/team/zeynep_deliceoglu.png' },
                     { role: "Deputy Director General", name: 'Sinecan Vural', avatar: '/images/team/sinecan_vural.png' },
@@ -92,7 +92,7 @@ const Teams: Teams = [
                 ],
                 members: [
                     { name: 'Elif Tınas', avatar: '/images/team/elif_tinas.png' },
-                    { name: 'Yağmur Sezgin', avatar: '/images/team/yagmur_sezgin.png' },
+                    { name: 'Yağmur Süzgün', avatar: '/images/team/yagmur_suzgun.png' },
                     { name: 'Sude Kutlu', avatar: '/images/team/sude_kutlu.png' },
                     { name: 'Yusuf Furkan Savan', avatar: '/images/team/yusuf_furkan_savan.png' },
                 ]
@@ -113,7 +113,7 @@ const Teams: Teams = [
     {
         name: "Academic Team",
         managers: [
-            { role: "Secretary General", name: 'İlke Yıkılmaz', avatar: '/images/team/ilke_yikilmaz.png' },
+            { role: "Secretary General", name: 'Alper Özkan', avatar: '/images/team/alper_ozkan.png' },
             { role: "Deputy Secretary General", name: 'Ahat Oğuzhan Ergin', avatar: '/images/team/ahat_oguzhan_ergin.png' },
         ],
         subTeams: [
@@ -126,7 +126,6 @@ const Teams: Teams = [
                     { role: "USG of UN WOMEN", name: 'Duru Taylan', avatar: '/images/team/duru_taylan.png' },
                     { role: "USG of WFP", name: 'Hayal Ece Güler', avatar: '/images/team/hayal_ece_guler.png' },
                     { role: "USG of NATO", name: 'Çağın Olgun', avatar: '/images/team/cagin_olgun.png' },
-                    { role: "USG of C34", name: 'Alper Özkan', avatar: '/images/team/alper_ozkan.png' },
                 ]
             },
             {
@@ -136,7 +135,7 @@ const Teams: Teams = [
                 members: [
                     { role: "Deputy Chair of UNDP", name: 'Seda Çetindağ', avatar: '/images/team/seda_cetindag.png' },
                     { role: "Deputy Chair of UN WOMEN", name: 'Zeynep Ceren Kökalp', avatar: '/images/team/zeynep_ceren_kokalp.png' },
-                    { role: "Deputy Chair of C34", name: 'Işıl Geçgel', avatar: '/images/team/isil_gecgel.png' },
+                    { role: "Deputy Chair of UNIDIR", name: 'Işıl Geçgel', avatar: '/images/team/isil_gecgel.png' },
                 ]
             },
             {
@@ -148,7 +147,7 @@ const Teams: Teams = [
                     { role: "Rapporteur of UN WOMEN", name: 'Nuran Coşkun', avatar: '/images/team/nuran_coskun.png' },
                     { role: "Rapporteur of WFP", name: 'Cansu Dağyaran', avatar: '/images/team/cansu_dagyaran.png' },
                     { role: "Rapporteur of NATO", name: 'Arda Ersöz', avatar: '/images/team/arda_ersoz.png' },
-                    { role: "Rapporteur of UNIDIR", name: 'Selin Çavuşoğlu', avatar: '/images/team/selin_cavusoglu.png' },
+                    { role: "Rapporteur of C34", name: 'Selin Çavuşoğlu', avatar: '/images/team/selin_cavusoglu.png' },
                     { role: "Rapporteur of European Parliament", name: 'Elif Çalışkan', avatar: '/images/team/elif_caliskan.png' },
                 ]
             }
