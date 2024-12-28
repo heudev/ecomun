@@ -14,7 +14,7 @@ type Day = {
 
 const conferenceDays: Day[] = [
     {
-        date: '06.02.2024',
+        date: '06.02.2025',
         sessions: [
             { time: '10:00 - 11:50', title: 'Registration' },
             { time: '12:00 - 13:30', title: 'Opening Ceremony' },
@@ -25,7 +25,7 @@ const conferenceDays: Day[] = [
         ],
     },
     {
-        date: '07.02.2024',
+        date: '07.02.2025',
         sessions: [
             { time: '10:00 - 11:20', title: 'Third Session' },
             { time: '11:20 - 11:50', title: 'Coffee Break' },
@@ -37,7 +37,7 @@ const conferenceDays: Day[] = [
         ],
     },
     {
-        date: '08.02.2024',
+        date: '08.02.2025',
         sessions: [
             { time: '10:00 - 11:20', title: 'Seventh Session' },
             { time: '11:20 - 11:50', title: 'Coffee Break' },
@@ -51,7 +51,7 @@ const conferenceDays: Day[] = [
         ],
     },
     {
-        date: '09.02.2024',
+        date: '09.02.2025',
         sessions: [
             { time: '10:00 - 11:20', title: 'Twelfth Session' },
             { time: '11:20 - 11:50', title: 'Coffee Break' },
