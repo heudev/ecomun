@@ -60,7 +60,6 @@ const Teams: Teams = [
                     { name: 'Ömer Yıldırım', avatar: '/images/team/omer_yildirim.png' },
                     { name: 'Ecem Özer', avatar: '/images/team/ecem_ozer.png' },
                     { name: 'Birce Karşıyakalı', avatar: '/images/team/birce_karsiyakali.png' },
-                    { name: 'Atakan Erişmiş', avatar: '/images/team/atakan_erismis.png' },
                 ]
             },
             {
