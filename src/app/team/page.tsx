@@ -91,7 +91,6 @@ const Teams: Teams = [
                 ],
                 members: [
                     { name: 'Elif Tınas', avatar: '/images/team/elif_tinas.png' },
-                    { name: 'Yağmur Süzgün', avatar: '/images/team/yagmur_suzgun.png' },
                     { name: 'Sude Kutlu', avatar: '/images/team/sude_kutlu.png' },
                     { name: 'Yusuf Furkan Savan', avatar: '/images/team/yusuf_furkan_savan.png' },
                 ]

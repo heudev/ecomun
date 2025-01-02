@@ -209,7 +209,7 @@ export default function Committees() {
             imageSrc: '/images/committees/wto_world_trade_organization.jpg',
             name: 'WTO: World Trade Organization',
             topic: 'Regional Sustainable Development Projects between partner and member countries to increase trade capacities.',
-            agenda1: 'Discussing the Zero-Tariff policy for least developed countries enforced by China and the effects they have on the country’s economic development.',
+            agenda1: 'Evaluating the implementation of zero-tariff policies for least developed countries and their impact on global economic equity and sustainable development.',
             agenda2: 'Trade Capacities and Economic Recovery in Conflict-Affected Regions: Addressing the Impact of the Middle Eastern War on Regional and Global Trade Systems.',
             openAgenda: "",
             itemA: "",
