@@ -50,6 +50,7 @@ function Modal({
     usgImageSrc,
     usgName,
     usgOfCommittee,
+    committeeGuide,
     onClose,
 }: {
     imageSrc: string;
@@ -65,6 +66,7 @@ function Modal({
     usgImageSrc: string;
     usgName: string;
     usgOfCommittee: string;
+    committeeGuide: string;
     onClose: () => void;
 }) {
     useEffect(() => {
@@ -118,6 +120,21 @@ function Modal({
 
 
                         <p className="mb-4 text-justify">{description}</p>
+
+                        <div className="flex justify-center">
+                            <a
+                                href={committeeGuide}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white text-purple-800 px-6 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-300 flex items-center gap-2"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                                </svg>
+                                Committee Guide
+                            </a>
+                        </div>
+
                         <div className='flex justify-between items-center'>
                             <div className="flex items-center">
                                 <Image
@@ -157,6 +174,7 @@ export default function Committees() {
         usgImageSrc: string;
         usgName: string;
         usgOfCommittee: string;
+        committeeGuide: string;
     } | null>(null);
 
     const committees = [
@@ -174,6 +192,7 @@ export default function Committees() {
             usgImageSrc: '/images/team/damla_incebiyik.png',
             usgName: 'Damla İncebıyık',
             usgOfCommittee: 'Under Secretary General of UNDP',
+            committeeGuide: "https://drive.google.com/file/d/1IAymH4l7_XDtA3qXIv2itQO3L9xJ3EKq/view?usp=sharing"
         },
         {
             imageSrc: '/images/committees/unhcr_united_nations_high_commissioner_for_refugees.jpg',
@@ -189,6 +208,7 @@ export default function Committees() {
             usgImageSrc: '/images/team/yigit_akarca.png',
             usgName: 'Yiğit Akarca',
             usgOfCommittee: 'Under Secretary General of UNHCR',
+            committeeGuide: "https://drive.google.com/file/d/1JEiboFsxnfgPxSa8oA4O9ec1icJ9DBlw/view?usp=sharing"
         },
         {
             imageSrc: '/images/committees/unidir_united_nations_institute_for_disarmament_research.jpg',
@@ -204,6 +224,7 @@ export default function Committees() {
             usgImageSrc: '/images/team/elis_funda.png',
             usgName: 'Elis Funda',
             usgOfCommittee: 'Under Secretary General of UNIDIR',
+            committeeGuide: "https://drive.google.com/file/d/1rHQ6pTkMNpUjuIVpzxMKZykYsKoyw5HU/view?usp=sharing"
         },
         {
             imageSrc: '/images/committees/wto_world_trade_organization.jpg',
@@ -219,6 +240,7 @@ export default function Committees() {
             usgImageSrc: '/images/team/sarp_batu_uysal.png',
             usgName: 'Sarp Batu Uysal',
             usgOfCommittee: 'Under Secretary General of WTO',
+            committeeGuide: "https://drive.google.com/file/d/1pJ95An25HXHdc4UCYgsTqDABP0N0n_0q/view?usp=sharing"
         },
         {
             imageSrc: '/images/committees/wfp_world_food_programme.jpg',
@@ -234,6 +256,7 @@ export default function Committees() {
             usgImageSrc: '/images/team/hayal_ece_guler.png',
             usgName: 'Hayal Ece Güler',
             usgOfCommittee: 'Under Secretary General of WFP',
+            committeeGuide: "https://drive.google.com/file/d/1JzE-Ckh9QyWzvHEVwhLpqjqSxu-VpNH7/view?usp=sharing"
         },
         {
             imageSrc: '/images/committees/un_women.jpg',
@@ -249,6 +272,7 @@ export default function Committees() {
             usgImageSrc: '/images/team/duru_taylan.png',
             usgName: 'Duru Taylan',
             usgOfCommittee: 'Under Secretary General of UN WOMEN',
+            committeeGuide: "https://drive.google.com/file/d/1Md6bjObB7_lTVfiepqU1U1Y-vTAwz9BO/view?usp=sharing"
         },
         {
             imageSrc: '/images/committees/european_parliament.jpg',
@@ -264,6 +288,7 @@ export default function Committees() {
             usgImageSrc: '/images/team/gokce_meva_aksu.png',
             usgName: 'Gökçe Meva Aksu',
             usgOfCommittee: 'Under Secretary General of European Parliament',
+            committeeGuide: "https://drive.google.com/file/d/18La4EMiRQeK1lwOFyvWyqZO-ca7rCqvj/view?usp=sharing"
         },
         {
             imageSrc: '/images/committees/c34_special_committee_on_peacekeeping_operations.jpg',
@@ -279,6 +304,7 @@ export default function Committees() {
             usgImageSrc: '/images/team/derin_duru.png',
             usgName: 'Derin Duru',
             usgOfCommittee: 'Under Secretary General of Special Committee on Peacekeeping Operations',
+            committeeGuide: "https://drive.google.com/file/d/1ovVkn5yeemj4pDCio7lzlCIGCvgydr6_/view?usp=sharing"
         },
         {
             imageSrc: '/images/committees/jcc_europe_end_of_the_middle_ages.jpg',
@@ -294,6 +320,7 @@ export default function Committees() {
             usgImageSrc: '/images/team/yarkin_menderes.png',
             usgName: 'Yarkın Menderes',
             usgOfCommittee: 'Under Secretary General of JCC',
+            committeeGuide: "https://drive.google.com/file/d/1i5706m4V4sd7BysKnm1v_8LjNSQIXRnY/view?usp=sharing"
         },
         {
             imageSrc: '/images/committees/nato_the_north_atlantic_treaty_organization.jpg',
@@ -309,6 +336,7 @@ export default function Committees() {
             usgImageSrc: '/images/team/cagin_olgun.png',
             usgName: 'Çağın Olgun',
             usgOfCommittee: 'Under Secretary General of NATO',
+            committeeGuide: "https://drive.google.com/file/d/19FmnQPb5nJbKvydpVk3RUGxBw8QK5CZw/view?usp=sharing"
         },
     ];
 
@@ -346,6 +374,7 @@ export default function Committees() {
                     usgImageSrc={selectedCommittee.usgImageSrc}
                     usgName={selectedCommittee.usgName}
                     usgOfCommittee={selectedCommittee.usgOfCommittee}
+                    committeeGuide={selectedCommittee.committeeGuide}
                     onClose={() => setSelectedCommittee(null)}
                 />
             )}
