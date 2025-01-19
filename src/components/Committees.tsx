@@ -192,7 +192,7 @@ export default function Committees() {
             usgImageSrc: '/images/team/damla_incebiyik.png',
             usgName: 'Damla İncebıyık',
             usgOfCommittee: 'Under Secretary General of UNDP',
-            committeeGuide: "https://drive.google.com/file/d/1IAymH4l7_XDtA3qXIv2itQO3L9xJ3EKq/view?usp=sharing"
+            committeeGuide: "https://drive.google.com/file/d/1BcP3ifsfQ1lesOl-VpAu0Memlt-HHZ4Z/view?usp=sharing"
         },
         {
             imageSrc: '/images/committees/unhcr_united_nations_high_commissioner_for_refugees.jpg',
