@@ -51,6 +51,7 @@ function Modal({
     usgName,
     usgOfCommittee,
     committeeGuide,
+    rulesOfProcedure,
     onClose,
 }: {
     imageSrc: string;
@@ -67,6 +68,7 @@ function Modal({
     usgName: string;
     usgOfCommittee: string;
     committeeGuide: string;
+    rulesOfProcedure?: string;
     onClose: () => void;
 }) {
     useEffect(() => {
@@ -135,6 +137,22 @@ function Modal({
                             </a>
                         </div>
 
+                        {rulesOfProcedure && (
+                            <div className="flex justify-center mt-4">
+                                <a
+                                    href={rulesOfProcedure}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-white text-purple-800 px-6 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-300 flex items-center gap-2"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
+                                    </svg>
+                                    Rules of Procedure
+                                </a>
+                            </div>
+                        )}
+
                         <div className='flex justify-between items-center'>
                             <div className="flex items-center">
                                 <Image
@@ -161,6 +179,8 @@ function Modal({
 
 export default function Committees() {
     const [selectedCommittee, setSelectedCommittee] = useState<{
+        usgName: string;
+        usgOfCommittee: string;
         imageSrc: string;
         name: string;
         description: string;
@@ -172,11 +192,9 @@ export default function Committees() {
         itemB: string;
         level: string;
         usgImageSrc: string;
-        usgName: string;
-        usgOfCommittee: string;
         committeeGuide: string;
+        rulesOfProcedure?: string;
     } | null>(null);
-
     const committees = [
         {
             imageSrc: '/images/committees/united_nations_development_programme.jpg',
@@ -288,7 +306,8 @@ export default function Committees() {
             usgImageSrc: '/images/team/gokce_meva_aksu.png',
             usgName: 'Gökçe Meva Aksu',
             usgOfCommittee: 'Under Secretary General of European Parliament',
-            committeeGuide: "https://drive.google.com/file/d/18La4EMiRQeK1lwOFyvWyqZO-ca7rCqvj/view?usp=sharing"
+            committeeGuide: "https://drive.google.com/file/d/1GQ_3CVXVNccE6e0cgHVfud4mSMClVnrd/view?usp=sharing",
+            rulesOfProcedure: "https://drive.google.com/file/d/1t7QsTnKlGacv17Q80osk_MRm-KwX1fnA/view?usp=sharing"
         },
         {
             imageSrc: '/images/committees/c34_special_committee_on_peacekeeping_operations.jpg',
@@ -375,6 +394,7 @@ export default function Committees() {
                     usgName={selectedCommittee.usgName}
                     usgOfCommittee={selectedCommittee.usgOfCommittee}
                     committeeGuide={selectedCommittee.committeeGuide}
+                    rulesOfProcedure={selectedCommittee.rulesOfProcedure}
                     onClose={() => setSelectedCommittee(null)}
                 />
             )}
