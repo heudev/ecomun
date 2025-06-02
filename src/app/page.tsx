@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+/* import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Letter from "@/components/Letter";
 import Contact from "@/components/Contact";
@@ -8,7 +8,7 @@ import Committees from "@/components/Committees";
 //import Team from "@/components/Team";
 import Gallery from "@/components/Gallery";
 import Fees from "@/components/Fees";
-import Faq from "@/components/Faq";
+import Faq from "@/components/Faq"; */
 
 export default function Home() {
   return (
