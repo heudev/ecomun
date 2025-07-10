@@ -8,27 +8,26 @@ export default function Letter() {
 
                     <div className="relative p-6">
                         <h1 className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-6">
-                            Secretary-General Letter
+                            Secretary General Letter
                         </h1>
                         <p className="text-base lg:text-lg leading-relaxed mb-6 text-justify">
-                            Dear participants of ECOMUN,
+                            Honourable Delegates and Most Distinguished Participants,
                             <br /><br />
-                            On behalf of the entire ECOMUN secretariat team, it is my honor to welcome all of you to our annual ECOMUN conference!
+                            My name is Ahat Oğuzhan Ergin, a senior law student at İzmir University of Economics and I am honored to serve as your Secretary General for this conference. Alongside my Director General Zeynep Deliceoğlu, I will be leading a dedicated and passionate team to provide you with an unforgettable Model United Nations experience.
                             <br /><br />
-                            My name is Alper ÖZKAN, a Mechatronics Engineering student and I will be serving as your Secretaty-General for this year&apos;s iteration of ECOMUN, Izmir&apos;s biggest Model United Nations Conference. Throughout the whole conference, My Director General Zeynep Deliceoğlu and I will lead a team of passionate and hard-working Izmir University of Economics students in managing Izmir’s  finest Model UN conference to the best of our abilities.
+                            My journey in MUN began back in 2017. Since then, I have been a part of this world for eight years and years filled with debate, challenge, friendship and change. From delegate to chair, from academic to organizational roles, each step has brought new lessons, new faces and stories I still carry with me. Now, I stand here not only with years of experience but with the sincere will to create a meaningful conference for each and every one of you.
                             <br /><br />
-                            ECOMUN&apos;s mission is simple; we strive to provide young leaders a stimulating platform to debate, discuss, and resolve critical global issues by promoting equity, creativity, and diplomacy. At ECOMUN, Model United Nations is more than a simulation of the UN, but rather, it is a space for high school delegates to dig into the world of international issues and develop stronger public speaking, communication, critical thinking, and diplomacy skills. Whether you are the most passionate and knowledgeable political thinker or, perhaps, are someone foreign to the world of diplomacy, ECOMUN is for you.
+                            When I first stepped into the world of MUN, I saw it as a valuable addition to my résumé. But over time, I came to realize that the true impact of MUN lies not in what it adds to a CV but in what it adds to you — the courage to speak up, the strength to challenge ideas and the ability to listen and grow. That is exactly what ECOMUN strives to be: more than just a simulation, it is a platform for young minds to engage with global issues, sharpen their voice and become thoughtful leaders through diplomacy, dialogue and respect. Whether this is your first conference or your tenth, I hope you find in these four days a space to reflect, connect and discover something meaningful in yourself.
                             <br /><br />
-                            Model UN has been an incredibly impactful part of my life, and I would not be where I am today if I had never participated in it. I hope that Model UN will have the same effect on all delegates attending ECOMUN, be it by making a new friend or by becoming a more confident person. Myself and the rest of the Secretariat Team are committed to providing a fun and educational Model United Nations experience to all delegates at ECOMUN, and we cannot wait to meet everyone in IEU this February.
+                            These four days belong to you. Speak when it’s difficult, think when it feels easy and never forget the value of respect. Be bold in your ideas, open in your conversations and fearless in challenging what you believe can be better — because nothing has been written yet and that is exactly where the beauty lies. As the Secretariat, our role is to stand beside you throughout this journey to guide, support and ensure that ECOMUN becomes a place of meaningful debate, genuine growth and unforgettable memories. We cannot wait to welcome you to İzmir University of Economics this September and to witness the ideas, energy and passion you will bring to the table.
                             <br /><br />
-                            Kind regards,
+                            With the deepest sincerity and hope,<br />
+                            We welcome you all.
                         </p>
                         <p className="font-semibold">
-                            Alper ÖZKAN
-                            <br />
-                            Secretary-General
-                            <br />
-                            Izmir University of Economics Model United Nations 2025
+                            Ahat Oğuzhan Ergin<br />
+                            Secretary General<br />
+                            İzmir University of Economics Model United Nations 2025
                         </p>
                     </div>
                 </div>

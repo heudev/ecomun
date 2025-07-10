@@ -14,10 +14,10 @@ type Day = {
 
 const conferenceDays: Day[] = [
     {
-        date: '06.02.2025',
+        date: '11.09.2025',
         sessions: [
-            { time: '10:00 - 11:50', title: 'Registration' },
-            { time: '12:00 - 13:30', title: 'Opening Ceremony' },
+            { time: '11:00 - 12:50', title: 'Registration' },
+            { time: '13:00 - 13:30', title: 'Opening Ceremony' },
             { time: '13:30 - 14:00', title: 'Coffee Break' },
             { time: '14:00 - 15:20', title: 'First Session' },
             { time: '15:20 - 15:35', title: 'Coffee Break' },
@@ -25,7 +25,7 @@ const conferenceDays: Day[] = [
         ],
     },
     {
-        date: '07.02.2025',
+        date: '12.09.2025',
         sessions: [
             { time: '10:00 - 11:20', title: 'Third Session' },
             { time: '11:20 - 11:50', title: 'Coffee Break' },
@@ -37,7 +37,7 @@ const conferenceDays: Day[] = [
         ],
     },
     {
-        date: '08.02.2025',
+        date: '13.09.2025',
         sessions: [
             { time: '10:00 - 11:20', title: 'Seventh Session' },
             { time: '11:20 - 11:50', title: 'Coffee Break' },
@@ -51,7 +51,7 @@ const conferenceDays: Day[] = [
         ],
     },
     {
-        date: '09.02.2025',
+        date: '14.09.2025',
         sessions: [
             { time: '10:00 - 11:20', title: 'Twelfth Session' },
             { time: '11:20 - 11:50', title: 'Coffee Break' },
@@ -63,6 +63,7 @@ const conferenceDays: Day[] = [
         ],
     },
 ];
+
 
 const ConferenceSchedule: React.FC = () => {
     const [selectedDay, setSelectedDay] = useState(conferenceDays[0].date);

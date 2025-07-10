@@ -25,7 +25,6 @@ export default function Navbar() {
                 behavior: 'smooth',
             });
 
-            // URL güncelle ama sayfa yeniden yüklenmeden
             window.history.replaceState(null, '', `#${targetId}`);
         }
     };
