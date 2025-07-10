@@ -31,9 +31,9 @@ export default function Home() {
                     <Fade triggerOnce>
                         <Letter />
                     </Fade>
-                    <Fade triggerOnce>
-                        <Committees />
-                    </Fade>
+
+                    <Committees />
+
                     <Fade triggerOnce>
                         <ConferenceDays />
                     </Fade>
