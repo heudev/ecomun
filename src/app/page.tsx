@@ -23,7 +23,7 @@ export default function Home() {
 
               <div>
                 <Fade triggerOnce delay={300}>
-                  <h1 className="text-xl md:text-6xl font-bold mb-2 text-white shadow-2xl">
+                  <h1 className="text-2xl md:text-6xl font-bold mb-2 text-white shadow-2xl">
                     İzmir University of Economics
                   </h1>
                 </Fade>
@@ -34,7 +34,7 @@ export default function Home() {
                 </Fade>
               </div>
 
-              <div className="flex justify-center gap-6">
+              <div className="flex flex-wrap justify-center gap-6">
                 <Fade triggerOnce delay={800}>
                   <Link
                     href="/prime"
