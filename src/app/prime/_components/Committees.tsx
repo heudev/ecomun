@@ -325,7 +325,7 @@ export default function Committees() {
             committeeGuide: ""
         },
         {
-            imageSrc: '/images/committees/jcc.jpg',
+            imageSrc: '/images/committees/jcc-1.jpg',
             name: 'JCC - Shattered Crescent : Ottoman Interregnum',
             topic: 'Shattered Crescent : Ottoman Interregnum',
             openAgenda: '',
