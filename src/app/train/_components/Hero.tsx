@@ -16,7 +16,7 @@ export default function Hero() {
             <div className="hero-content text-neutral-content text-center">
                 <div className="space-y-6 md:space-y-10">
                     <div>
-                        <h1 className="text-2xl md:text-6xl font-bold mb-2 text-white shadow-2xl">İzmir University Of Economics</h1>
+                        <h1 className="text-2xl md:text-6xl font-bold mb-2 text-white shadow-2xl">İzmir University of Economics</h1>
                         <h1 className="mb-5 text-2xl md:text-6xl font-bold text-white shadow-2xl">ECOMUN DUAL Conference</h1>
                     </div>
                     <div className="flex justify-center">
