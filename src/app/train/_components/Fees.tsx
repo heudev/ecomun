@@ -52,8 +52,8 @@ export default function Fees() {
                     "International Delegate",
                     `An International Delegate is a participant traveling from abroad to attend the conference bringing international perspectives to debates.`,
                     [
-                        { label: "Individual Delegate", price: "$60", link: "https://forms.gle/15JFjHMY2hdBfZmm6" },
-                        { label: "Delegation", price: "$50", link: "https://docs.google.com/forms/d/e/1FAIpQLSfB_s2Gti9Xyc6938whZd6FpBXDbwb9bEfqBlEs8VfAISIczw/viewform?usp=sharing" },
+                        { label: "Individual Delegate", price: "€50", link: "https://forms.gle/15JFjHMY2hdBfZmm6" },
+                        { label: "Delegation", price: "€45", link: "https://docs.google.com/forms/d/e/1FAIpQLSfB_s2Gti9Xyc6938whZd6FpBXDbwb9bEfqBlEs8VfAISIczw/viewform?usp=sharing" },
                     ]
                 )}
             </div>
