@@ -4,7 +4,7 @@ export default function Fees() {
             <div className="text-center mb-8">
                 <h1 className="text-3xl lg:text-5xl font-bold mb-4">Fees</h1>
                 <p>Delegates in Turkey pay the fees indicated in TRY.</p>
-                <p>Delegates coming from abroad pay prices indicated in USD.</p>
+                <p>Delegates coming from abroad pay prices indicated in EURO.</p>
             </div>
 
             <div className="w-full max-w-4xl px-4 space-y-4">
