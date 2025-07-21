@@ -18,7 +18,7 @@ export default function Fees() {
                     [
                         { label: "Individual Delegate", price: "1950₺", link: "https://docs.google.com/forms/d/e/1FAIpQLSdAHMn4V8UjzwrWx0mJZHytanbwfjPb4VGPNRn4Nkudx1RTIA/viewform?usp=pp_url" },
                         { label: "Delegation", price: "1900₺", link: "https://forms.gle/Ani1qKec6qNXkksm6" },
-                        { label: "IUE Delegate", price: "1100₺", link: "https://forms.gle/hD7ARfdonRTZGkEb9" },
+                        { label: "IUE Delegate", price: "900₺", link: "https://forms.gle/hD7ARfdonRTZGkEb9" },
                     ]
                 )}
                 {collapseItem(
@@ -35,7 +35,7 @@ export default function Fees() {
                     [
                         { label: "Crisis Team Member", price: "1150₺", link: "https://forms.gle/dRMbfT3VdEvT6okD8" },
                         { label: "Committee Board", price: "1150₺", link: "https://forms.gle/SQveovaAL4pdCF9g9" },
-                        { label: "Committee Board Trainee", price: "1150₺", link: "https://forms.gle/WPkhtUq8vdQzd8TC9" },
+                        { label: "Committee Board Trainee", price: "1200₺", link: "https://forms.gle/WPkhtUq8vdQzd8TC9" },
                     ]
                 )}
                 {collapseItem(
