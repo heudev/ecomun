@@ -22,7 +22,7 @@ export default function Hero() {
                     <div className="flex justify-center">
                         <CountdownTimer />
                     </div>
-                    <h1 className="mb-5 text-2xl md:text-4xl text-white font-bold mt-5">12 - 14 February 2026</h1>
+                    <h1 className="mb-5 text-2xl md:text-4xl text-white font-bold mt-5">12 - 15 February 2026</h1>
                     <div className="text-xl text-white">#feeltheaegeandifference</div>
                     <button className="btn rounded-lg text-lg bg-[#fd7706] text-white hover:bg-[#fd7706] hover:scale-110 border-0" onClick={() => handleScroll('fees')}>Apply Now!</button>
                 </div>
