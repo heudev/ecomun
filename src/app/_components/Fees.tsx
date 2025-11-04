@@ -16,9 +16,9 @@ export default function Fees() {
 
                     An IUE Delegate refers specifically to students from İzmir University of Economics who attend the conference at a reduced rate.`,
                     [
-                        { label: "Individual Delegate", price: "1950₺", link: "https://docs.google.com/forms/d/e/1FAIpQLSdAHMn4V8UjzwrWx0mJZHytanbwfjPb4VGPNRn4Nkudx1RTIA/viewform?usp=pp_url" },
-                        { label: "Delegation", price: "1900₺", link: "https://forms.gle/Ani1qKec6qNXkksm6" },
-                        { label: "IUE Delegate", price: "900₺", link: "https://forms.gle/hD7ARfdonRTZGkEb9" },
+                        { label: "Individual Delegate", price: "2450₺", link: "https://docs.google.com/forms/d/e/1FAIpQLSdAHMn4V8UjzwrWx0mJZHytanbwfjPb4VGPNRn4Nkudx1RTIA/viewform?usp=pp_url" },
+                        { label: "Delegation", price: "2400₺", link: "https://forms.gle/Ani1qKec6qNXkksm6" },
+                        { label: "IUE Delegate", price: "1250₺", link: "https://forms.gle/hD7ARfdonRTZGkEb9" },
                     ]
                 )}
                 {collapseItem(
@@ -33,9 +33,8 @@ export default function Fees() {
 
                     The Crisis Committee Board consists of the Head of Crisis, Crisis Team Members and the Committee Board Members (President Chair, Deputy Chair and Co-Chairs).`,
                     [
-                        { label: "Crisis Team Member", price: "1150₺", link: "https://forms.gle/dRMbfT3VdEvT6okD8" },
-                        { label: "Committee Board", price: "1150₺", link: "https://forms.gle/SQveovaAL4pdCF9g9" },
-                        { label: "Committee Board Trainee", price: "1200₺", link: "https://forms.gle/WPkhtUq8vdQzd8TC9" },
+                        { label: "Crisis Team Member", price: "1400₺", link: "https://forms.gle/dRMbfT3VdEvT6okD8" },
+                        { label: "Committee Board", price: "1400₺", link: "https://forms.gle/SQveovaAL4pdCF9g9" },
                     ]
                 )}
                 {collapseItem(
@@ -44,8 +43,8 @@ export default function Fees() {
 
                     Administrative Staff assist with logistics, registration and delegate support to ensure the smooth running of the conference. They handle organizational and operational tasks.`,
                     [
-                        { label: "Press Staff", price: "950₺", link: "https://forms.gle/ULDmTB9CD25MGxP36" },
-                        { label: "Administrative Staff", price: "950₺", link: "https://forms.gle/PyV6c4MzMUFX3YgKA" },
+                        { label: "Press Staff", price: "1300₺", link: "https://forms.gle/ULDmTB9CD25MGxP36" },
+                        { label: "Administrative Staff", price: "1300₺", link: "https://forms.gle/PyV6c4MzMUFX3YgKA" },
                     ]
                 )}
                 {collapseItem(

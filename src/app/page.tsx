@@ -1,56 +1,62 @@
-import { Fade } from "react-awesome-reveal";
+import Navbar from "@/app/_components/Navbar";
+import Hero from "@/app/_components/Hero";
+import Letter from "@/app/_components/Letter";
+import Contact from "@/app/_components/Contact";
+import Youtube from "@/app/_components/Youtube";
+import ConferenceDays from "@/app/_components/ConferenceDays";
+import Committees from "@/app/_components/Committees";
+import Gallery from "@/app/_components/Gallery";
+import Fees from "@/app/_components/Fees";
+import Faq from "@/app/_components/Faq";
+import { Fade } from 'react-awesome-reveal';
 
 export default function Home() {
   return (
-    <main className="relative h-screen overflow-hidden text-white">
+    <main className="relative min-h-screen overflow-hidden text-white">
       <div
         aria-hidden="true"
         className="fixed inset-0 bg-center bg-cover bg-no-repeat z-0"
         style={{
           backgroundImage: `url('/images/backgrounds/campus.jpg')`,
+          height: '100vh',
         }}
       ></div>
+      <div className="fixed inset-0 bg-black opacity-65 z-10"></div>
+      <section className="relative z-20">
+        <Navbar />
+        <Fade triggerOnce>
+          <Hero />
+        </Fade>
+        <div className="space-y-20 md:space-y-32">
+          <Fade triggerOnce>
+            <Letter />
+          </Fade>
 
-      <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-10"></div>
+          <Committees />
 
-      <section className="relative z-20 h-full flex flex-col justify-between select-none">
-
-        <div className="hero flex-grow flex items-center justify-center" id="hero">
-          <div className="hero-content text-center">
-            <div className="space-y-6 md:space-y-10">
-
-              <Fade triggerOnce delay={300}>
-                <h1 className="text-3xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#fd7706] via-white to-[#0f216d] drop-shadow-[0_0_35px_rgba(255,255,255,0.35)]">
-                  We are back, stay tuned!
-                </h1>
-              </Fade>
-
-              <Fade triggerOnce delay={500}>
-                <div className="mb-5 mt-5 text-3xl md:text-5xl font-bold text-white/90 tracking-wide drop-shadow-[0_0_20px_rgba(0,0,0,0.8)]">
-                  ~ ECOMUN Team
-                </div>
-              </Fade>
-
-            </div>
-          </div>
+          <Fade triggerOnce>
+            <ConferenceDays />
+          </Fade>
+          <Fade triggerOnce>
+            <Fees />
+          </Fade>
+          <Fade triggerOnce>
+            <Gallery />
+          </Fade>
+          <Fade triggerOnce>
+            <Youtube />
+          </Fade>
+          <Fade triggerOnce>
+            <Faq />
+          </Fade>
+          <Fade triggerOnce>
+            <Contact />
+          </Fade>
         </div>
-
-        <div className="flex justify-center pb-5">
-          <a
-            href="https://enes.run"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="italic opacity-70 hover:opacity-100 transition duration-200"
-          >
-            Developed by{" "}
-            <span className="font-bold text-white hover:text-[#4fb0ff] transition">
-              Enes Uysal
-            </span>
-          </a>
+        <div className="flex justify-center pb-5 pt-5">
+          <a href="https://enes.run" target="_blank" className="italic">Developed by <span className="font-bold">Enes Uysal</span></a>
         </div>
-
       </section>
-
     </main>
   );
-}
+} 

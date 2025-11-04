@@ -109,7 +109,7 @@ function Modal({
 
                         {openAgenda !== "" &&
                             <div>
-                                <p className="mb-2"><strong className='text-white'>Open Agenda:</strong> {openAgenda}</p>
+                                <p className="mb-2">{openAgenda}</p>
                             </div>
                         }
 
@@ -197,6 +197,54 @@ export default function Committees() {
     } | null>(null);
     const committees = [
         {
+            imageSrc: '/images/committees/disec.jpg',
+            name: 'DISEC - Disarmament and International Security Committee',
+            topic: 'The Role of Arms Trade Transparency in Global Peace and Security',
+            agenda1: 'Harnessing Technology to Improve Transparency in Arms Tracking and Record-Keepin',
+            agenda2: 'Preventing Arms Flows to Conflict Zones through Transparency and Enforcement of Embargoes',
+            openAgenda: "",
+            itemA: "",
+            itemB: "",
+            description: "DISEC focuses on addressing global security threats and advancing disarmament initiatives. It aims to promote transparency in arms trade and prevent weapons from reaching conflict zones.",
+            level: 'Beginner',
+            usgImageSrc: '/images/team/useravatar.png',
+            usgName: 'Kuzey Erdoğan',
+            usgOfCommittee: '',
+            committeeGuide: ""
+        },
+        {
+            imageSrc: '/images/committees/unido.jpg',
+            name: 'UNIDO - United Nations Industrial Development Organization',
+            topic: 'Promoting Sustainable Industrialization through Green Innovation and Sustainable Energy',
+            agenda1: 'Promoting renewable energy into developing global industries',
+            agenda2: '',
+            openAgenda: "",
+            itemA: "",
+            itemB: "",
+            description: "UNIDO is a specialized agency of the United Nations that promotes inclusive and sustainable industrial development. It helps countries transition to greener economies through innovation and renewable energy initiatives, with a focus on supporting developing nations.",
+            level: 'Beginner',
+            usgImageSrc: '/images/team/useravatar.png',
+            usgName: 'Lamia Zeyno Çelebi',
+            usgOfCommittee: '',
+            committeeGuide: ""
+        },
+        {
+            imageSrc: '/images/committees/unesco.jpeg',
+            name: 'UNESCO',
+            topic: 'Balancing Austerity Measures with Sustainable Development Goals',
+            agenda1: 'Reassessing the role of foreign exchange controls in emerging and developed Economies while discussing the stability, sovereignty and systematic risks',
+            agenda2: 'Mitigating global debt distress and assessing the IMF’s role in debt restructuring and relief',
+            openAgenda: "",
+            itemA: "",
+            itemB: "",
+            description: "The IMF works to promote global economic stability and sustainable growth. It provides financial support and policy advice to countries facing economic challenges while balancing austerity with development goals.",
+            level: 'Beginner',
+            usgImageSrc: '/images/team/eda-dora-aksular.jpg',
+            usgName: 'Eda Dora Aksular',
+            usgOfCommittee: '',
+            committeeGuide: ""
+        },
+        {
             imageSrc: '/images/committees/undpo.jpg',
             name: 'UNDPO - United Nations Department of Peace Operations',
             topic: 'Improving the Efficiency and Accountability of UN Peacekeeping Mission',
@@ -209,6 +257,22 @@ export default function Committees() {
             level: 'Intermediate',
             usgImageSrc: '/images/team/ozer-gurbuz.jpg',
             usgName: 'Özer Gürbüz',
+            usgOfCommittee: '',
+            committeeGuide: ""
+        },
+        {
+            imageSrc: '/images/committees/echr.jpg',
+            name: 'ECHR - European Court of Human Rights ',
+            topic: 'European Human Rights Violations (Open Case)',
+            agenda1: '',
+            agenda2: '',
+            openAgenda: 'Cases will be given at the start of the Conference',
+            itemA: "",
+            itemB: "",
+            description: 'The ECHR ensures compliance with the European Convention on Human Rights by adjudicating cases of violations across member states. It serves as Europe’s leading human rights court.',
+            level: 'Intermediate',
+            usgImageSrc: '/images/team/useravatar.png',
+            usgName: 'Seda Çetindağ & Elif Çalışkan',
             usgOfCommittee: '',
             committeeGuide: ""
         },
@@ -229,22 +293,6 @@ export default function Committees() {
             committeeGuide: ""
         },
         {
-            imageSrc: '/images/committees/nato-1.jpg',
-            name: 'NATO - North Atlantic Treaty Organization',
-            topic: 'The Future of the Alliance in a Multipolar World: Responding to Russian Expansionism and Redefining Influence in the Emerging Power Struggles in the Middle East',
-            agenda1: '',
-            agenda2: '',
-            openAgenda: 'The agenda will be determined based on the decision of the committee.',
-            itemA: "",
-            itemB: "",
-            description: "NATO is a military and political alliance ensuring collective defence and security among its members. It addresses global power shifts and emerging threats like Russian expansionism and Middle East instability.",
-            level: 'Advanced',
-            usgImageSrc: '/images/team/gokalp-elmas.jpg',
-            usgName: 'Gökalp Elmas',
-            usgOfCommittee: '',
-            committeeGuide: ""
-        },
-        {
             imageSrc: '/images/committees/unsc.jpg',
             name: 'UNSC - United Nations Security Council',
             topic: 'The Destabilizing Effects of Unrecognized State Actors and Shadow Governments',
@@ -254,25 +302,25 @@ export default function Committees() {
             itemA: "",
             itemB: "",
             description: "The UNSC maintains international peace and security by addressing crises with binding resolutions. It investigates threats from shadow governments and unrecognized state actors.",
-            level: 'Advanced',
+            level: 'Intermediate',
             usgImageSrc: '/images/team/useravatar.png',
-            usgName: 'Tuna Bayoğlu',
+            usgName: '',
             usgOfCommittee: '',
             committeeGuide: ""
         },
         {
-            imageSrc: '/images/committees/wto-1.jpg',
-            name: 'WTO - World Trade Organization',
-            topic: 'Reassessing Trade Liberalization in the Era of Economic Nationalism',
-            agenda1: 'Debating the Political Implications of Economic Nationalism on Global Trade Cooperation',
-            agenda2: 'Exploring Strategies to Balance National Sovereignty with Free Trade Principles',
-            openAgenda: '',
+            imageSrc: '/images/committees/vienna.jpeg',
+            name: 'Congress of Vienna',
+            topic: '',
+            openAgenda: 'Open Agenda',
+            agenda1: '',
+            agenda2: '',
             itemA: "",
             itemB: "",
-            description: "The WTO regulates global trade, ensuring fair and predictable trade flows. It balances economic nationalism with free trade principles in an increasingly protectionist global economy.",
-            level: 'Advanced',
-            usgImageSrc: '/images/team/gokce-meva-aksu.jpg',
-            usgName: 'Gökçe Meva Aksu',
+            description: 'The Ottoman Empire stands fractured as the sons of Bayezid I getting ready to clash for the throne in a brutal civil war. Alliances shift and betrayals run deep as Anatolia and Rumelia descend into chaos. Only one can emerge as Sultan to reunite the Crescent.',
+            level: 'Intermediate',
+            usgImageSrc: '/images/team/jcc-usg.jpg',
+            usgName: 'Kaan Cansızoğlu',
             usgOfCommittee: '',
             committeeGuide: ""
         },
@@ -288,39 +336,7 @@ export default function Committees() {
             description: "The Istanbul Convention is a European human rights treaty focused on preventing violence against women. It aims to create strong enforcement mechanisms for gender equality and protection.",
             level: 'Advanced',
             usgImageSrc: '/images/team/elif-funda.jpg',
-            usgName: 'Elis Funda',
-            usgOfCommittee: '',
-            committeeGuide: ""
-        },
-        {
-            imageSrc: '/images/committees/hor.jpg',
-            name: 'HoR - House of Representatives',
-            topic: 'Evaluating the 2025 "Liberation Day Tariff Act" and Its Implications on Domestic and Foreign Trade',
-            agenda1: 'Assessing the Strategic Impacts of the Liberation Day Tariff Act on the United States’ Role in Global Trade',
-            agenda2: 'Addressing the Domestic Economic Impacts of the Liberation Day Tariff Act on the United States',
-            openAgenda: '',
-            itemA: "",
-            itemB: "",
-            description: "The U.S. House of Representatives shapes domestic and international trade policies. It debates legislative acts such as the “Liberation Day Tariff Act” and their global implications.",
-            level: 'Advanced',
-            usgImageSrc: '/images/team/ali-utuk.jpg',
-            usgName: 'Ali Ütük',
-            usgOfCommittee: '',
-            committeeGuide: ""
-        },
-        {
-            imageSrc: '/images/committees/hcc.jpg',
-            name: "HCC - The Iron Sword: Amir Timur Gurkhan's Court",
-            topic: "The Iron Sword: Amir Timur Gurkhan's Court",
-            openAgenda: '',
-            agenda1: '',
-            agenda2: '',
-            itemA: "",
-            itemB: "",
-            description: 'At the height of his conquests, Timur gathers emirs, scholars and rivals to shape the future of his empire. With succession disputes and external threats looming, the court becomes a battlefield of ambition. Will Timur’s legacy endure or will his empire crumble from within?',
-            level: 'Prime',
-            usgImageSrc: '/images/team/jcc-usg.jpg',
-            usgName: 'Berk Embel',
+            usgName: '',
             usgOfCommittee: '',
             committeeGuide: ""
         },
@@ -334,9 +350,26 @@ export default function Committees() {
             itemA: "",
             itemB: "",
             description: 'The Ottoman Empire stands fractured as the sons of Bayezid I getting ready to clash for the throne in a brutal civil war. Alliances shift and betrayals run deep as Anatolia and Rumelia descend into chaos. Only one can emerge as Sultan to reunite the Crescent.',
-            level: 'Prime',
+            level: 'Advanced',
             usgImageSrc: '/images/team/jcc-usg.jpg',
             usgName: 'Yalın Menderes',
+            usgOfCommittee: '',
+            committeeGuide: ""
+        },
+        //----
+        {
+            imageSrc: '/images/committees/arab.jpeg',
+            name: 'Arab League',
+            topic: '',
+            openAgenda: 'Open Agenda',
+            agenda1: '',
+            agenda2: '',
+            itemA: "",
+            itemB: "",
+            description: 'The Arab League is a regional organization that promotes political, economic, cultural, and social cooperation among its member states. It works to strengthen unity in the Arab world, address regional conflicts through dialogue, and support collective efforts toward development and stability. The organization also plays a key role in representing Arab interests on the global stage and advancing peace and mutual understanding within the region.',
+            level: 'Advanced',
+            usgImageSrc: '/images/team/jcc-usg.jpg',
+            usgName: 'Gökçe Meva Aksu',
             usgOfCommittee: '',
             committeeGuide: ""
         }
