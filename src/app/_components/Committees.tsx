@@ -233,11 +233,11 @@ export default function Committees() {
             name: 'UNESCO',
             topic: 'Balancing Austerity Measures with Sustainable Development Goals',
             agenda1: 'Reassessing the role of foreign exchange controls in emerging and developed Economies while discussing the stability, sovereignty and systematic risks',
-            agenda2: 'Mitigating global debt distress and assessing the IMF’s role in debt restructuring and relief',
+            agenda2: 'TBA',
             openAgenda: "",
             itemA: "",
             itemB: "",
-            description: "The IMF works to promote global economic stability and sustainable growth. It provides financial support and policy advice to countries facing economic challenges while balancing austerity with development goals.",
+            description: "TBA",
             level: 'Beginner',
             usgImageSrc: '/images/team/eda-dora-aksular.jpg',
             usgName: 'Eda Dora Aksular',
@@ -336,7 +336,7 @@ export default function Committees() {
             description: "The Istanbul Convention is a European human rights treaty focused on preventing violence against women. It aims to create strong enforcement mechanisms for gender equality and protection.",
             level: 'Advanced',
             usgImageSrc: '/images/team/elif-funda.jpg',
-            usgName: '',
+            usgName: 'Gökçe Meva Aksu',
             usgOfCommittee: '',
             committeeGuide: ""
         },
@@ -369,7 +369,7 @@ export default function Committees() {
             description: 'The Arab League is a regional organization that promotes political, economic, cultural, and social cooperation among its member states. It works to strengthen unity in the Arab world, address regional conflicts through dialogue, and support collective efforts toward development and stability. The organization also plays a key role in representing Arab interests on the global stage and advancing peace and mutual understanding within the region.',
             level: 'Advanced',
             usgImageSrc: '/images/team/jcc-usg.jpg',
-            usgName: 'Gökçe Meva Aksu',
+            usgName: 'Alper Özkan',
             usgOfCommittee: '',
             committeeGuide: ""
         }
