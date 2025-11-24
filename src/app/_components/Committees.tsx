@@ -50,7 +50,7 @@ function Modal({
     usgImageSrc,
     usgName,
     usgOfCommittee,
-    committeeGuide,
+    /*  committeeGuide, */
     rulesOfProcedure,
     onClose,
 }: {
@@ -123,7 +123,7 @@ function Modal({
 
                         <p className="mb-4 text-justify">{description}</p>
 
-                        <div className="flex justify-center">
+                        {/* <div className="flex justify-center">
                             <a
                                 href={committeeGuide}
                                 target="_blank"
@@ -135,7 +135,7 @@ function Modal({
                                 </svg>
                                 Study Guide
                             </a>
-                        </div>
+                        </div> */}
 
                         {rulesOfProcedure && (
                             <div className="flex justify-center mt-4">
