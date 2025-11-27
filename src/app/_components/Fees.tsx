@@ -23,18 +23,20 @@ export default function Fees() {
                 )}
                 {collapseItem(
                     "Academic Team",
-                    `The Trainees will be part of the academic team and will work closely with experienced and highly efficient members of the academic board in their selected committees. This will allow them to learn how to contribute effectively within an academic team environment.
+                    `We are offering a special opportunity for delegates who have never had any Committee Board (Academic Board) experience at the ECOMUN conference. This program is designed to give you a solid start on your academic journey.
 
-                    Whenever possible, they will also have the opportunity to visit other committees to observe and understand how different types of committees operate.
+    Mentorship and Close Collaboration: You will have the chance to work closely with the experienced and highly efficient members of the Committee Academic Board.
 
-                    Our main goal is to provide delegates who have never had board experience with the chance to gain this experience and begin their academic journey.
+    Explore Other Committees: Whenever possible, you will have the opportunity to visit and observe other committees. This will enable you to understand how different types of committees operate and are managed (e.g., general assembly, crisis, specialized).
 
-                    The Committee Board consists of the Chair, Co-Chair and Rapporteur who moderate debates, ensure procedural rules are followed and support delegates throughout the sessions.
+    The Committee Board consists of the Chair, Co-Chair and Rapporteur who moderate debates, ensure procedural rules are followed and support delegates throughout the sessions.
 
-                    The Crisis Committee Board consists of the Head of Crisis, Crisis Team Members and the Committee Board Members (President Chair, Deputy Chair and Co-Chairs).`,
+    The Crisis Committee Board consists of the Head of Crisis, Crisis Team Members and the Committee Board Members (President Chair, Deputy Chair and Co-Chairs).`,
                     [
                         { label: "Crisis Team Member", price: "1400₺", link: "https://forms.gle/dRMbfT3VdEvT6okD8" },
                         { label: "Committee Board", price: "1400₺", link: "https://forms.gle/SQveovaAL4pdCF9g9" },
+                        { label: "Committee Board Trainee", price: "1500₺", link: "https://forms.gle/WPkhtUq8vdQzd8TC9" },
+
                     ]
                 )}
                 {collapseItem(

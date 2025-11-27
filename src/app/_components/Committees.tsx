@@ -207,7 +207,7 @@ export default function Committees() {
             itemB: "",
             description: "DISEC focuses on addressing global security threats and advancing disarmament initiatives. It aims to promote transparency in arms trade and prevent weapons from reaching conflict zones.",
             level: 'Beginner',
-            usgImageSrc: '/images/team/useravatar.png',
+            usgImageSrc: '/images/team/kuzey-erdogan.png',
             usgName: 'Kuzey Erdoğan',
             usgOfCommittee: '',
             committeeGuide: ""
@@ -223,7 +223,7 @@ export default function Committees() {
             itemB: "",
             description: "UNIDO is a specialized agency of the United Nations that promotes inclusive and sustainable industrial development. It helps countries transition to greener economies through innovation and renewable energy initiatives, with a focus on supporting developing nations.",
             level: 'Beginner',
-            usgImageSrc: '/images/team/useravatar.png',
+            usgImageSrc: '/images/team/lamia-zeyno-celebi.png',
             usgName: 'Lamia Zeyno Çelebi',
             usgOfCommittee: '',
             committeeGuide: ""
@@ -287,24 +287,8 @@ export default function Committees() {
             itemB: "",
             description: "The IAEA promotes the safe and peaceful use of nuclear technology while preventing the spread of nuclear weapons. It supports countries in maintaining nuclear security in politically unstable regions.",
             level: 'Intermediate',
-            usgImageSrc: '/images/team/useravatar.png',
+            usgImageSrc: '/images/team/eren-bice.png',
             usgName: 'Eren Bice',
-            usgOfCommittee: '',
-            committeeGuide: ""
-        },
-        {
-            imageSrc: '/images/committees/unsc.jpg',
-            name: 'UNSC - United Nations Security Council',
-            topic: 'The Destabilizing Effects of Unrecognized State Actors and Shadow Governments',
-            agenda1: 'State Capture and Economic Control by Non-Elected Entities',
-            agenda2: 'The Impact of Military and Intelligence Structures on Democratic Governance',
-            openAgenda: '',
-            itemA: "",
-            itemB: "",
-            description: "The UNSC maintains international peace and security by addressing crises with binding resolutions. It investigates threats from shadow governments and unrecognized state actors.",
-            level: 'Intermediate',
-            usgImageSrc: '/images/team/useravatar.png',
-            usgName: '',
             usgOfCommittee: '',
             committeeGuide: ""
         },
@@ -319,7 +303,7 @@ export default function Committees() {
             itemB: "",
             description: 'The Ottoman Empire stands fractured as the sons of Bayezid I getting ready to clash for the throne in a brutal civil war. Alliances shift and betrayals run deep as Anatolia and Rumelia descend into chaos. Only one can emerge as Sultan to reunite the Crescent.',
             level: 'Intermediate',
-            usgImageSrc: '/images/team/jcc-usg.jpg',
+            usgImageSrc: '/images/team/kaan-cansizoglu.png',
             usgName: 'Kaan Cansızoğlu',
             usgOfCommittee: '',
             committeeGuide: ""
@@ -335,7 +319,7 @@ export default function Committees() {
             itemB: "",
             description: "The Istanbul Convention is a European human rights treaty focused on preventing violence against women. It aims to create strong enforcement mechanisms for gender equality and protection.",
             level: 'Advanced',
-            usgImageSrc: '/images/team/elif-funda.jpg',
+            usgImageSrc: '/images/team/gokce-meva-aksu.png',
             usgName: 'Gökçe Meva Aksu',
             usgOfCommittee: '',
             committeeGuide: ""
@@ -351,8 +335,8 @@ export default function Committees() {
             itemB: "",
             description: 'The Ottoman Empire stands fractured as the sons of Bayezid I getting ready to clash for the throne in a brutal civil war. Alliances shift and betrayals run deep as Anatolia and Rumelia descend into chaos. Only one can emerge as Sultan to reunite the Crescent.',
             level: 'Advanced',
-            usgImageSrc: '/images/team/jcc-usg.jpg',
-            usgName: 'Yalın Menderes',
+            usgImageSrc: '/images/team/useravatar.png',
+            usgName: 'Yalın Menderes ve Rüzgar Efe Taşın',
             usgOfCommittee: '',
             committeeGuide: ""
         },
@@ -368,7 +352,7 @@ export default function Committees() {
             itemB: "",
             description: 'The Arab League is a regional organization that promotes political, economic, cultural, and social cooperation among its member states. It works to strengthen unity in the Arab world, address regional conflicts through dialogue, and support collective efforts toward development and stability. The organization also plays a key role in representing Arab interests on the global stage and advancing peace and mutual understanding within the region.',
             level: 'Advanced',
-            usgImageSrc: '/images/team/jcc-usg.jpg',
+            usgImageSrc: '/images/team/alper-ozkan.png',
             usgName: 'Alper Özkan',
             usgOfCommittee: '',
             committeeGuide: ""
